@@ -1,0 +1,67 @@
+:root {
+    /* Azules (Principales) */
+    --azul-oscuro: #0069c0;   /* Para el encabezado o títulos fuertes */
+    --azul-vibrante: #2196f3; /* Tu color de marca (Logo y Botones) */
+    --azul-claro: #97e9ff;    /* Para fondos suaves o etiquetas */
+
+    /* Morados (Acentos) */
+    --morado-fuerte: #7f00b2; /* Para resaltar ofertas o botones secundarios */
+    --morado-claro: #ab3ed8;  /* Para el 'hover' (cuando pasas el mouse) */
+
+    /* Colores neutros necesarios */
+    --blanco: #ffffff;
+    --gris-fondo: #f5f5f5;
+    --negro-texto: #222222;
+}
+
+body {
+    background-color: var(--gris-fondo);
+    color: var(--negro-texto);
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Centrar todo el contenido para que no toque los bordes del celular */
+.contenedor-principal {
+    padding: 70px 15px 90px 15px; /* Arriba para el header y abajo para la barra inferior */
+}
+
+/* El Header (Barra Superior) */
+.barra-superior {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 60px;
+    background-color: var(--blanco);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    z-index: 1000;
+}
+
+/* El Logo con tus colores */
+.logo {
+    font-size: 20px;
+    color: var(--azul-oscuro);
+}
+.logo span {
+    color: var(--azul-vibrante);
+    font-weight: bold;
+}
+
+/* La Barra Inferior con 5 iconos */
+.barra-inferior {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 65px;
+    background-color: var(--blanco);
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    box-shadow: 0 -2px 10px rgba(0,0,0,0.05);
+    z-index: 1000;
+}
