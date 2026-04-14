@@ -1,0 +1,138 @@
+/* --- Logo y Navegación Superior --- */
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 1.1rem;
+    font-weight: 800;
+}
+
+.logo span { color: var(--celeste); }
+
+.barra_superior img {
+    height: 32px;
+    width: auto;
+}
+
+.oculto { display: none; }
+
+.boton-hamburguesa {
+    font-size: 1.6rem;
+    cursor: pointer;
+    z-index: 1300; /* Siempre clickable para cerrar */
+    position: relative;
+}
+
+/* --- Buscador y Categorías (Estilo Canva) --- */
+.entrada-busqueda {
+    width: 100%;
+    padding: 12px 15px;
+    border: none;
+    border-radius: 12px;
+    background-color: var(--blanco);
+    box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+    margin-bottom: 20px;
+    outline: none;
+}
+
+.categorias-cortas {
+    display: flex;
+    gap: 12px;
+    margin-bottom: 25px;
+}
+
+.filtro {
+    flex: 1;
+    padding: 12px;
+    border: none;
+    border-radius: 15px;
+    background-color: var(--celeste-soft);
+    color: var(--navy);
+    font-weight: 700;
+    font-size: 0.75rem;
+}
+
+/* --- Tarjetas de Producto --- */
+.tarjeta {
+    background: var(--blanco);
+    border-radius: 20px;
+    padding: 10px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.02);
+    position: relative;
+}
+
+.foto-producto img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 15px;
+}
+
+.corazon {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    background: white;
+    border: none;
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    color: #ef4444;
+}
+
+.detalles h3 {
+    font-size: 0.85rem;
+    margin: 8px 0 4px;
+}
+
+.precio {
+    color: var(--celeste);
+    font-weight: 800;
+    margin-bottom: 10px;
+    display: block;
+}
+
+.enlace-ver {
+    display: block;
+    text-align: center;
+    background: var(--celeste);
+    color: white;
+    text-decoration: none;
+    padding: 8px;
+    border-radius: 8px;
+    font-size: 0.75rem;
+    font-weight: bold;
+}
+
+/* --- Iconos Celestes con Nombre --- */
+.icono-nav {
+    text-decoration: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2px;
+    transition: 0.3s;
+}
+
+.icono-nav i {
+    font-style: normal;
+    font-size: 1.4rem;
+    /* Filtro para teñir emojis de celeste/azul */
+    filter: sepia(100%) hue-rotate(170deg) saturate(500%);
+}
+
+.icono-nav span {
+    font-size: 0.65rem;
+    font-weight: 700;
+    color: var(--navy);
+}
+
+.icono-nav.activo i {
+    filter: sepia(100%) hue-rotate(185deg) saturate(800%);
+    transform: translateY(-3px);
+}
+
+.icono-nav.activo span {
+    color: var(--celeste);
+}
