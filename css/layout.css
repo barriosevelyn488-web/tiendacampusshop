@@ -65,42 +65,47 @@
 /* --- LAYOUT DE  PAGE DE CATALOGO----*/
 /*---------------------------------------*/
 
-.cuerpo-gris {
-    background-color: #fcfdfc; /* Fondo general de la app */
-    margin: 0;
-    font-family: sans-serif;
+/* header, lupa catalogo etc*/
+.barra_superior_catalogo {
+    background: #ffffff;
+    padding: 10px 15px;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    border-bottom: 1px solid #f0f0f0;
 }
 
-.contenedor_grid {
-    padding: 15px;
+/* Alineación horizontal */
+.header_top {
+    display: flex;
+    justify-content: space-between; /* Lupa a la izq, Carrito a la der */
+    align-items: center;
+    width: 100%;
 }
 
-.bloque_productos_doble {
-    display: grid;
-    grid-template-columns: 1fr 1fr; /* 2 columnas exactas */
-    gap: 12px;
-}
+/* Lógica del Buscador */
+#checkBusqueda { display: none; }
 
-.contenedor_principal {
-    margin-bottom: 80px; /* Espacio para que no lo tape la barra inferior */
-}
-
-/* Ocultamos el cuadro blanco del checkbox */
-#checkBusqueda.oculto {
-    display: none;
-}
-
-/* Estado inicial: Altura cero y escondido */
 .contenedor-buscador {
     max-height: 0;
     overflow: hidden;
-    transition: max-height 0.4s ease-in-out; /* Animación de bajada */
-    background-color: white;
+    transition: 0.3s ease-in-out;
 }
 
-/* LA LÓGICA DE ACTIVACIÓN */
-/* Cuando el checkbox esté marcado, busca al hermano header y luego al buscador */
 #checkBusqueda:checked ~ .barra_superior_catalogo .contenedor-buscador {
-    max-height: 80px; /* Altura suficiente para el input de texto */
+    max-height: 60px;
     padding: 10px 0;
+}
+
+/* --- GRID DE 2 COLUMNAS --- */
+.contenedor_principal {
+    padding: 15px;
+    margin-bottom: 80px;
+}
+
+.bloque_productos_doble {
+    display: grid !important;
+    grid-template-columns: 1fr 1fr !important; /* Dos productos por fila */
+    gap: 15px;
+    width: 100%;
 }

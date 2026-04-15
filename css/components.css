@@ -167,128 +167,96 @@
 /* --- COMPONENTES DE CATALOGO--- */
 /*-----------------------------*/
 
-/* --- ESTILOS DE LA APP (CATÁLOGO) --- */
-
-.barra_superior_catalogo {
-    background: #ffffff;
-    padding: 10px 15px;
-    position: sticky;
-    top: 0;
-    z-index: 100;
-    border-bottom: 1px solid #f0f0f0;
-}
-
-.header_top {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-bottom: 15px;
-}
-
 .titulo_centro {
-    font-size: 1.1rem;
-    color: var(--navy); /* Verde oscuro del ejemplo */
-    font-weight: 700;
+    font-size: 1.2rem;
+    font-weight: 800;
+    color: #000;
+    margin: 0;
 }
 
-/* --- BOTONES DE FILTRO --- */
 .contenedor_filtros {
     display: flex;
-    gap: 10px;
-    padding-bottom: 5px;
+    gap: 8px;
+    padding: 12px 0 5px;
 }
 
 .filtro_pill {
-    background: var(--celeste-soft); /* Color menta suave */
+    background-color: #00acee; /* Celeste EliShop */
+    color: white;
     border: none;
-    padding: 6px 15px;
+    padding: 7px 15px;
     border-radius: 20px;
-    color: var(--navy);
+    font-weight: 700;
     font-size: 0.85rem;
-    font-weight: 600;
 }
 
-.filtro_pill.activo {
-    background: var(--celeste);
-    color: var(--blanco);
-}
-
-/* --- TARJETAS COMPACTAS (EL CAMBIO REAL) --- */
+/* --- TARJETAS DE PRODUCTO --- */
 .tarjeta_compacta {
-    background: var(--blanco);
-    border: 1px solid var(--celeste-soft);
-    border-radius: 12px;
-    padding: 8px;
+    background: #fff;
+    border-radius: 15px;
+    padding: 10px;
     display: flex;
     flex-direction: column;
+    position: relative;
 }
 
 .imagen_contenedor {
-    background-color: #f1f7f5; /* Fondo gris-claro */
-    border-radius: 10px;
+    background-color: #f1f7f5;
+    border-radius: 12px;
     height: 150px;
-    position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
+    position: relative;
+    overflow: hidden;
 }
 
 .imagen_contenedor img {
-    max-height: 90%;
-    width: auto;
+    max-width: 85%;
+    max-height: 85%;
+    object-fit: contain;
 }
+
+/* Etiquetas y Carrito sobre la imagen */
+.etiqueta {
+    position: absolute;
+    top: 8px;
+    left: 8px;
+    background: #ff7e7e;
+    color: white;
+    font-size: 0.65rem;
+    padding: 3px 10px;
+    border-radius: 10px;
+    font-weight: 700;
+    z-index: 2;
+}
+.oferta { background-color: #ff7e7e; } /* Rojo/Rosado */
+.stock { background-color: #7ebfff; }  /* Celeste */
 
 .boton_carrito_circular {
     position: absolute;
     bottom: 8px;
     right: 8px;
-    background: var(--botones);
-    color: var(--blanco);
-    border: none;
+    background: rgba(255, 255, 255, 0.9);
+    border: 1px solid #eee;
     width: 32px;
     height: 32px;
     border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     cursor: pointer;
 }
 
-/* Etiquetas (Oferta/Stock) */
-.etiqueta {
-    position: absolute;
-    top: 8px;
-    left: 8px;
-    font-size: 0.6rem;
-    padding: 3px 8px;
-    border-radius: 10px;
-    color: var(--blanco);
-    font-weight: 700;
-}
-.oferta { background: var(--oferta); }
-.stock { background: #7ebfff; }
-
-.info_producto h3 {
-    font-size: 0.8rem;
-    margin: 10px 0 5px;
-    color: #333;
-}
-
 .precio_app {
+    color: #d0d0d0; /* Gris clarito */
+    font-size: 0.85rem;
+    font-weight: 600;
+}
+
+.titulo-categoria {
+    font-size: 1.3rem;
     font-weight: 800;
-    color: var(--celeste-soft);
-    font-size: 0.95rem;
-}
-
-.input-busqueda-real {
-    width: 90%; /* Un poco menos del total para dejar márgenes */
-    display: block;
-    margin: 0 auto;
-    padding: 10px 15px;
-    border-radius: 20px;
-    border: 1px solid #e9f5f0;
-    background-color: #f1f7f5;
-    outline: none;
-}
-
-.icono_accion {
-    cursor: pointer; /* Para que salga la manita al pasar por la lupa */
-    font-size: 1.2rem;
+    margin-bottom: 20px; /* <--- Cambia este número para dar más o menos espacio */
+    display: block; /* Asegura que el margen se aplique correctamente */
 }
