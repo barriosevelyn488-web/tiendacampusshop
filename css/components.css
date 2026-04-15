@@ -1,7 +1,11 @@
-/* --- Identidad --- */
+/*----------------------------*/
+/* --- COMPONENTES DE INDEX--- */
+/*-----------------------------*/
+
+
 .logo { display: flex; align-items: center; gap: 8px; }
 .logo h1 { font-size: 1.2rem; font-weight: 800; }
-.logo span { color: var(--violeta); }
+.logo span { color: var(--celeste); }
 .img-logo { height: 40px; width: auto; display: block; }
 
 /* --- Menú Hamburguesa --- */
@@ -106,3 +110,185 @@
 .icono-nav span { font-size: 0.7rem; font-weight: 700; color: var(--navy); }
 .icono-nav.activo i { filter: sepia(100%) hue-rotate(185deg) saturate(800%); }
 .icono-nav.activo span { color: var(--celeste); }
+
+/* --- Sección Categorías (Estilo Mockup) --- */
+.categorias-populares {
+    margin: 20px 0;
+}
+
+.titulo-seccion {
+    font-size: 1rem;
+    font-weight: 800;
+    color: var(--navy);
+    margin-bottom: 15px;
+}
+
+.contenedor-categorias {
+    display: flex;
+    justify-content: space-between;
+    gap: 12px;
+}
+
+.item-categoria {
+    flex: 1; /* Hace que los 3 midan lo mismo */
+    background-color: var(--celeste-soft); /* El color suave de tu paleta */
+    border-radius: 20px;
+    padding: 15px 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+    transition: 0.3s;
+}
+
+.circulo-icono {
+    width: 45px;
+    height: 45px;
+    background-color: rgba(255, 255, 255, 0.5); /* Círculo blanco semi-transparente */
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.circulo-icono img {
+    width: 22px;
+    height: 22px;
+    object-fit: contain;
+}
+
+.item-categoria span {
+    font-size: 0.75rem;
+    font-weight: 700;
+    color: var(--navy);
+}
+
+/*----------------------------*/
+/* --- COMPONENTES DE CATALOGO--- */
+/*-----------------------------*/
+
+/* --- ESTILOS DE LA APP (CATÁLOGO) --- */
+
+.barra_superior_catalogo {
+    background: #ffffff;
+    padding: 10px 15px;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    border-bottom: 1px solid #f0f0f0;
+}
+
+.header_top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.titulo_centro {
+    font-size: 1.1rem;
+    color: var(--navy); /* Verde oscuro del ejemplo */
+    font-weight: 700;
+}
+
+/* --- BOTONES DE FILTRO --- */
+.contenedor_filtros {
+    display: flex;
+    gap: 10px;
+    padding-bottom: 5px;
+}
+
+.filtro_pill {
+    background: var(--celeste-soft); /* Color menta suave */
+    border: none;
+    padding: 6px 15px;
+    border-radius: 20px;
+    color: var(--navy);
+    font-size: 0.85rem;
+    font-weight: 600;
+}
+
+.filtro_pill.activo {
+    background: var(--celeste);
+    color: var(--blanco);
+}
+
+/* --- TARJETAS COMPACTAS (EL CAMBIO REAL) --- */
+.tarjeta_compacta {
+    background: var(--blanco);
+    border: 1px solid var(--celeste-soft);
+    border-radius: 12px;
+    padding: 8px;
+    display: flex;
+    flex-direction: column;
+}
+
+.imagen_contenedor {
+    background-color: #f1f7f5; /* Fondo gris-claro */
+    border-radius: 10px;
+    height: 150px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.imagen_contenedor img {
+    max-height: 90%;
+    width: auto;
+}
+
+.boton_carrito_circular {
+    position: absolute;
+    bottom: 8px;
+    right: 8px;
+    background: var(--botones);
+    color: var(--blanco);
+    border: none;
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+/* Etiquetas (Oferta/Stock) */
+.etiqueta {
+    position: absolute;
+    top: 8px;
+    left: 8px;
+    font-size: 0.6rem;
+    padding: 3px 8px;
+    border-radius: 10px;
+    color: var(--blanco);
+    font-weight: 700;
+}
+.oferta { background: var(--oferta); }
+.stock { background: #7ebfff; }
+
+.info_producto h3 {
+    font-size: 0.8rem;
+    margin: 10px 0 5px;
+    color: #333;
+}
+
+.precio_app {
+    font-weight: 800;
+    color: var(--celeste-soft);
+    font-size: 0.95rem;
+}
+
+.input-busqueda-real {
+    width: 90%; /* Un poco menos del total para dejar márgenes */
+    display: block;
+    margin: 0 auto;
+    padding: 10px 15px;
+    border-radius: 20px;
+    border: 1px solid #e9f5f0;
+    background-color: #f1f7f5;
+    outline: none;
+}
+
+.icono_accion {
+    cursor: pointer; /* Para que salga la manita al pasar por la lupa */
+    font-size: 1.2rem;
+}

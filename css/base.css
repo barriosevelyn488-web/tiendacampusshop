@@ -6,6 +6,9 @@
     --celeste-soft: #f0f9ff;
     --blanco: #ffffff;
     --fondo-pag: #f8fafc;
+    --botones: #c6dee2;
+    --oferta: #ff7e7e;
+ 
 }
 
 * {
@@ -20,3 +23,8 @@ body {
     color: var(--navy);
     padding-bottom: 90px;
 }
+
+
+/*----------------------------*/
+/* --- COMPONENTES DE CATALOGO--- */
+/*-----------------------------*/
