@@ -1,0 +1,34 @@
+/* --- RESPONSIVE DESIGN --- */
+
+/* Para tablets y escritorio (pantallas mayores a 768px) */
+@media screen and (min-width: 768px) {
+    .contenedor-checkout, 
+    .contenedor-historial {
+        max-width: 800px; /* Se ensancha un poco más en PC */
+        margin: 40px auto;
+        background: white;
+        border-radius: 20px;
+        box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+        padding: 40px;
+    }
+
+    .lista-metodos-pago {
+        display: grid;
+        grid-template-columns: 1fr 1fr; /* Los métodos de pago se ponen en dos columnas */
+        gap: 20px;
+    }
+
+    .barra_superior {
+        padding: 20px 0;
+    }
+}
+
+/* Ajuste para pantallas muy pequeñas */
+@media screen and (max-width: 380px) {
+    .titulo_centro {
+        font-size: 1.1rem;
+    }
+    .btn-principal-pago {
+        font-size: 0.9rem;
+    }
+}
