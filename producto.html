@@ -1,15 +1,220 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="responsive.css">
-    <link rel="stylesheet" href="componentes.css">
-    <link rel="stylesheet" href="base.css">
-    <link rel="stylesheet" href="layout.css">
+    <title>EliShop - Detalles</title>
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/components.css">
+    <link rel="stylesheet" href="css/layout.css">
 </head>
-<body>
-    
-</body>
-</html>                                                                    
+<body class="cuerpo-gris">
+
+    <input type="checkbox" id="check-chaqueta" class="hash-check">
+    <input type="checkbox" id="check-momjeans" class="hash-check">
+    <input type="checkbox" id="check-camiseta" class="hash-check">
+    <input type="checkbox" id="check-abr-negro" class="hash-check">
+    <input type="checkbox" id="check-sin-manga" class="hash-check">
+    <input type="checkbox" id="check-tres-cuartos" class="hash-check">
+    <input type="checkbox" id="check-campana" class="hash-check">
+    <input type="checkbox" id="check-piel" class="hash-check">
+
+    <header class="barra_superior_catalogo">
+        <div class="header_top">
+            <a href="catalogo.html" class="icono_accion">←</a>
+            <h1 class="titulo_centro">Detalles del Producto</h1>
+            <a href="carrito.html" class="icono_accion">🛒</a>
+        </div>
+    </header>
+
+    <main class="seccion-detalles">
+
+        <article id="abr-cuero" class="articulo-detalle tarjeta-detallada">
+            <div class="imagen-detalle-contenedor"><img src="img/chaqueta.jpg" alt="Chaqueta de cuero"></div>
+            <div class="info-producto">
+                <h2>Chaqueta de cuero marrón</h2>
+                <span class="precio-grande">Q450.00</span>
+                <p class="texto-descripcion">Piel sintética premium con forro térmico.</p>
+                
+                <div class="selector-tallas">
+                    <p class="etiqueta-pequena">Talla</p>
+                    <div class="contenedor-botones-talla">
+                        <button type="button" class="btn-talla">S</button>
+                        <button type="button" class="btn-talla activo">M</button>
+                        <button type="button" class="btn-talla">L</button>
+                    </div>
+                </div>
+
+                <div class="descripcion-ampliada">
+                    <p>Chaqueta de corte moderno y material resistente, ideal para protegerte del frío manteniendo un estilo urbano sofisticado.</p>
+                </div>
+                <label for="check-chaqueta" class="btn-comprar-full">Agregar al carrito</label>
+            </div>
+        </article>
+
+        <article id="pant-mom" class="articulo-detalle tarjeta-detallada">
+            <div class="imagen-detalle-contenedor"><img src="img/momjeans1.jpg" alt="Mom Jeans"></div>
+            <div class="info-producto">
+                <h2>Mom Jeans Clásicos</h2>
+                <span class="precio-grande">Q200.00</span>
+                <p class="texto-descripcion">Tiro alto, estilo retro de los 90.</p>
+        
+                <div class="selector-tallas">
+                    <p class="etiqueta-pequena">Talla</p>
+                    <div class="contenedor-botones-talla">
+                        <button type="button" class="btn-talla">S</button>
+                        <button type="button" class="btn-talla activo">M</button>
+                        <button type="button" class="btn-talla">L</button>
+                    </div>
+                </div>
+        
+                <div class="descripcion-ampliada">
+                    <p>Estos Mom Jeans cuentan con un corte auténtico de los años 90, fabricados en mezclilla rígida de alta durabilidad que se amolda perfectamente a tu figura.</p>
+                </div>
+                <label for="check-momjeans" class="btn-comprar-full">Agregar al carrito</label>
+            </div>
+        </article>
+
+        <article id="cam-blanca" class="articulo-detalle tarjeta-detallada">
+            <div class="imagen-detalle-contenedor"><img src="img/camiseta.jpg" alt="Camiseta Orgánica"></div>
+            <div class="info-producto">
+                <h2>Camiseta Orgánica</h2>
+                <span class="precio-grande">Q230.00</span>
+                <p class="texto-descripcion">100% Algodón para máxima frescura.</p>
+
+                <div class="selector-tallas">
+                    <p class="etiqueta-pequena">Talla</p>
+                    <div class="contenedor-botones-talla">
+                        <button type="button" class="btn-talla">S</button>
+                        <button type="button" class="btn-talla activo">M</button>
+                        <button type="button" class="btn-talla">L</button>
+                    </div>
+                </div>
+
+                <div class="descripcion-ampliada">
+                    <p>Básico esencial fabricado de manera sostenible, ofreciendo una suavidad inigualable y un ajuste relajado para el uso diario.</p>
+                </div>
+                <label for="check-camiseta" class="btn-comprar-full">Agregar al carrito</label>
+            </div>
+        </article>
+
+        <article id="abr-negro" class="articulo-detalle tarjeta-detallada">
+            <div class="imagen-detalle-contenedor"><img src="img/abrigo negro.jpg" alt="Abrigo Negro"></div>
+            <div class="info-producto">
+                <h2>Abrigo Largo Negro</h2>
+                <span class="precio-grande">Q420.00</span>
+                <p class="texto-descripcion">Elegancia y protección para el invierno.</p>
+                
+                <div class="selector-tallas">
+                    <p class="etiqueta-pequena">Talla</p>
+                    <div class="contenedor-botones-talla">
+                        <button type="button" class="btn-talla">S</button>
+                        <button type="button" class="btn-talla activo">M</button>
+                        <button type="button" class="btn-talla">L</button>
+                    </div>
+                </div>
+
+                <div class="descripcion-ampliada">
+                    <p>Corte entallado y largo clásico que aporta distinción a cualquier conjunto invernal sin sacrificar el abrigo necesario.</p>
+                </div>
+                <label for="check-abr-negro" class="btn-comprar-full">Agregar al carrito</label>
+            </div>
+        </article>
+
+        <article id="cam-sin-manga" class="articulo-detalle tarjeta-detallada">
+            <div class="imagen-detalle-contenedor"><img src="img/basicas sin manga.jpg" alt="Sin manga"></div>
+            <div class="info-producto">
+                <h2>Básica sin manga</h2>
+                <span class="precio-grande">Q230.00</span>
+                <p class="texto-descripcion">Ideal para capas o clima cálido.</p>
+
+                <div class="selector-tallas">
+                    <p class="etiqueta-pequena">Talla</p>
+                    <div class="contenedor-botones-talla">
+                        <button type="button" class="btn-talla">S</button>
+                        <button type="button" class="btn-talla activo">M</button>
+                        <button type="button" class="btn-talla">L</button>
+                    </div>
+                </div>
+
+                <div class="descripcion-ampliada">
+                    <p>Diseño minimalista y versátil, perfecto para combinar debajo de chaquetas o llevar solo durante los días de sol.</p>
+                </div>
+                <label for="check-sin-manga" class="btn-comprar-full">Agregar al carrito</label>
+            </div>
+        </article>
+
+        <article id="cam-tres-cuartos" class="articulo-detalle tarjeta-detallada">
+            <div class="imagen-detalle-contenedor"><img src="img/trescuartosverde.jpg" alt="Manga 3/4"></div>
+            <div class="info-producto">
+                <h2>Manga Tres Cuartos</h2>
+                <span class="precio-grande">Q200.00</span>
+                <p class="texto-descripcion">Diseño versátil y cómodo en color verde.</p>
+
+                <div class="selector-tallas">
+                    <p class="etiqueta-pequena">Talla</p>
+                    <div class="contenedor-botones-talla">
+                        <button type="button" class="btn-talla">S</button>
+                        <button type="button" class="btn-talla activo">M</button>
+                        <button type="button" class="btn-talla">L</button>
+                    </div>
+                </div>
+
+                <div class="descripcion-ampliada">
+                    <p>Suaves al tacto y con un largo de manga ideal para estaciones de transición, aportando un toque de color fresco a tu guardarropa.</p>
+                </div>
+                <label for="check-tres-cuartos" class="btn-comprar-full">Agregar al carrito</label>
+            </div>
+        </article>
+
+        <article id="pant-campana" class="articulo-detalle tarjeta-detallada">
+            <div class="imagen-detalle-contenedor"><img src="img/pantalon1.jpg" alt="Pantalón Campana"></div>
+            <div class="info-producto">
+                <h2>Jeans Campana</h2>
+                <span class="precio-grande">Q425.00</span>
+                <p class="texto-descripcion">Corte acampanado para un look setentero.</p>
+
+                <div class="selector-tallas">
+                    <p class="etiqueta-pequena">Talla</p>
+                    <div class="contenedor-botones-talla">
+                        <button type="button" class="btn-talla">S</button>
+                        <button type="button" class="btn-talla activo">M</button>
+                        <button type="button" class="btn-talla">L</button>
+                    </div>
+                </div>
+
+                <div class="descripcion-ampliada">
+                    <p>Pantalones de mezclilla con silueta flare que estilizan la figura y evocan un estilo bohemio atemporal.</p>
+                </div>
+                <label for="check-campana" class="btn-comprar-full">Agregar al carrito</label>
+            </div>
+        </article>
+
+        <article id="abr-piel" class="articulo-detalle tarjeta-detallada">
+            <div class="imagen-detalle-contenedor"><img src="img/abrigo.jpg" alt="Abrigo de piel"></div>
+            <div class="info-producto">
+                <h2>Abrigo de Piel</h2>
+                <span class="precio-grande">Q1200.00</span>
+                <p class="texto-descripcion">Lujo y calidez extrema en una sola prenda.</p>
+
+                <div class="selector-tallas">
+                    <p class="etiqueta-pequena">Talla</p>
+                    <div class="contenedor-botones-talla">
+                        <button type="button" class="btn-talla">S</button>
+                        <button type="button" class="btn-talla activo">M</button>
+                        <button type="button" class="btn-talla">L</button>
+                    </div>
+                </div>
+
+                <div class="descripcion-ampliada">
+                    <p>Pieza exclusiva de alta gama diseñada para brindar el máximo aislamiento térmico con un acabado de lujo insuperable.</p>
+                </div>
+                <label for="check-piel" class="btn-comprar-full">Agregar al carrito</label>
+            </div>
+        </article>
+
+    </main>
+
+    <nav class="barra-inferior">
+        <a href="index.html" class="icono-nav"><i>🏠</i><span>Inicio</span></a> 
+        <a href="favoritos.

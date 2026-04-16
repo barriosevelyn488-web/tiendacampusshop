@@ -1,15 +1,117 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="responsive.css">
-    <link rel="stylesheet" href="componentes.css">
-    <link rel="stylesheet" href="base.css">
-    <link rel="stylesheet" href="layout.css">
+    <title>EliShop - Mi Carrito</title>
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/components.css">
+    <link rel="stylesheet" href="css/layout.css">
 </head>
-<body>
-    
+<body class="cuerpo-gris">
+
+    <input type="checkbox" id="check-chaqueta" class="hash-check" checked>
+    <input type="checkbox" id="check-momjeans" class="hash-check" checked>
+    <input type="checkbox" id="check-camiseta" class="hash-check" checked>
+    <input type="checkbox" id="check-abr-negro" class="hash-check">
+    <input type="checkbox" id="check-sin-manga" class="hash-check">
+    <input type="checkbox" id="check-tres-cuartos" class="hash-check">
+    <input type="checkbox" id="check-campana" class="hash-check">
+    <input type="checkbox" id="check-piel" class="hash-check">
+
+    <header class="barra_superior_catalogo" style="background:var(--blanco); border-bottom:1px solid var(--borde);">
+        <div class="header_top">
+            <a href="producto.html" class="icono_accion" style="text-decoration:none; color:var(--navy);">←</a>
+            <h1 class="titulo_centro" style="color:var(--navy); font-size: 1.2rem;">Mi Carrito</h1>
+            <div style="width:24px;"></div> 
+        </div>
+    </header>
+
+    <main class="contenedor-carrito">
+        
+        <div class="carrito-vacio-state">
+            <div class="icono-vacio-texto">
+                <span>🛒🚫</span>
+            </div>
+            <h2>Tu carrito está vacío :(</h2>
+            <p>Parece que aún no has añadido nada.<br>¡Explora nuestros productos!</p>
+            <a href="catalogo.html" class="btn-celeste-pago" style="margin-top: 20px; text-decoration: none;">Explorar Catálogo</a>
+        </div>
+
+        <article id="item-chaqueta" class="carrito-item">
+            <div class="carrito-item-img">
+                <img src="img/chaqueta.jpg" alt="Chaqueta">
+            </div>
+            <div class="carrito-item-info">
+                <h3>Chaqueta de cuero marrón</h3>
+                <p>Ref: #SKU00123</p>
+                <div class="selector-cantidad-mini">
+                    <span class="btn-qty">-</span>
+                    <span class="cant-numero">1</span>
+                    <span class="btn-qty">+</span>
+                </div>
+            </div>
+            <div class="carrito-item-accion">
+                <label for="check-chaqueta" class="btn-eliminar-item">🗑️</label>
+                <span class="carrito-item-precio">Q450.00</span>
+            </div>
+        </article>
+
+        <article id="item-momjeans" class="carrito-item">
+            <div class="carrito-item-img">
+                <img src="img/momjeans1.jpg" alt="Mom Jeans">
+            </div>
+            <div class="carrito-item-info">
+                <h3>Mom Jeans Clásicos</h3>
+                <p>Ref: #SKU00456</p>
+                <div class="selector-cantidad-mini">
+                    <span class="btn-qty">-</span>
+                    <span class="cant-numero">1</span>
+                    <span class="btn-qty">+</span>
+                </div>
+            </div>
+            <div class="carrito-item-accion">
+                <label for="check-momjeans" class="btn-eliminar-item">🗑️</label>
+                <span class="carrito-item-precio">Q200.00</span>
+            </div>
+        </article>
+
+        <article id="item-camiseta" class="carrito-item">
+            <div class="carrito-item-img">
+                <img src="img/camiseta.jpg" alt="Camiseta">
+            </div>
+            <div class="carrito-item-info">
+                <h3>Camiseta Orgánica Blanca</h3>
+                <p>Ref: #SKU00789</p>
+                <div class="selector-cantidad-mini">
+                    <span class="btn-qty">-</span>
+                    <span class="cant-numero">1</span>
+                    <span class="btn-qty">+</span>
+                </div>
+            </div>
+            <div class="carrito-item-accion">
+                <label for="check-camiseta" class="btn-eliminar-item">🗑️</label>
+                <span class="carrito-item-precio">Q230.00</span>
+            </div>
+        </article>
+
+    </main>
+
+    <div class="carrito-total-fijo">
+        <div class="fila-total">
+            <span>Subtotal</span>
+            <span>Q880.00</span>
+        </div>
+        <div class="fila-total">
+            <span>Envío</span>
+            <span>Q35.00</span>
+        </div>
+        <div class="fila-total principal">
+            <span>Total</span>
+            <span>Q915.00</span>
+        </div>
+        <a href="checkout.html" class="btn-celeste-pago">Proceder al Pago</a>
+    </div>
+
 </body>
 </html>

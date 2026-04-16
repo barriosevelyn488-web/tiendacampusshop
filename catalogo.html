@@ -1,15 +1,452 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="responsive.css">
-    <link rel="stylesheet" href="componentes.css">
-    <link rel="stylesheet" href="base.css">
-    <link rel="stylesheet" href="layout.css">
+    <title>EliShop - Catálogo</title>
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/components.css">
+    <link rel="stylesheet" href="css/layout.css">
 </head>
-<body>
+<body class="cuerpo-gris">
+
+    <input type="checkbox" id="checkBusqueda" class="oculto">
+
+    <header class="barra_superior_catalogo">
+        <div class="header_top">
+            <label for="checkBusqueda" class="icono_accion">🔍</label>
+            
+            <h1 class="titulo_centro">Catálogo</h1>
+            
+            <a href="vacio.html" class="icono_accion">🛒</a>
+        </div>
     
+        <div class="contenedor-buscador">
+            <input type="text" placeholder="¿Qué prenda buscas?" class="input-busqueda-real">
+        </div>
+    
+        <div class="contenedor_filtros">
+            <button class="filtro_pill activo">Talla ⌵</button>
+            <button class="filtro_pill">Color ⌵</button>
+            <button class="filtro_pill">Precio ⌵</button>
+        </div>
+    </header>
+
+    <main class="contenedor_principal">
+        <section id="camisetas" class="seccion-catalogo">
+            <h2 class="titulo-categoria">Camisetas</h2>
+            <div class="bloque_productos_doble">
+
+                <article class="tarjeta_compacta">
+                    <div class="imagen_contenedor">
+                        <span class="etiqueta oferta">Oferta</span>
+                        <a href="producto.html#cam-blanca">
+                            <img src="img/camiseta.jpg" alt="Camiseta"></a>
+                        
+                        <button class="boton_carrito_circular">🛒</button>
+                    </div>
+                    <div class="info_producto">
+                        <h3>Camiseta Orgánica</h3>
+                        <p class="precio_app">Q230.00</p>
+                    </div>
+                </article>
+
+                <article class="tarjeta_compacta">
+                    <div class="imagen_contenedor">
+                        <span class="etiqueta stock">pocos en stock</span>
+                        <img src="img/basicas sin manga.jpg" alt="Camiseta">
+                        <button class="boton_carrito_circular">🛒</button>
+                    </div>
+                    <div class="info_producto">
+                        <h3>Camisetas basicas sin manga</h3>
+                        <p class="precio_app">Q230.00</p>
+                    </div>
+                </article>
+
+                <article class="tarjeta_compacta">
+                    <div class="imagen_contenedor">
+                        <span class="etiqueta oferta">Oferta</span>
+                        <img src="img/camisetascasuales.jpg" alt="Camiseta">
+                        <button class="boton_carrito_circular">🛒</button>
+                    </div>
+                    <div class="info_producto">
+                        <h3>Camisetas casuales</h3>
+                        <p class="precio_app">Q230.00</p>
+                    </div>
+                </article>
+
+                <article class="tarjeta_compacta">
+                    <div class="imagen_contenedor">
+                        <img src="img/con diseño 2.jpg" alt="Camiseta">
+                        <button class="boton_carrito_circular">🛒</button>
+                    </div>
+                    <div class="info_producto">
+                        <h3>Camiseta perfectly</h3>
+                        <p class="precio_app">Q230.00</p>
+                    </div>
+                </article>
+
+                <article class="tarjeta_compacta">
+                    <div class="imagen_contenedor">
+                        <img src="img/con diseño.jpg" alt="Camiseta">
+                        <button class="boton_carrito_circular">🛒</button>
+                    </div>
+                    <div class="info_producto">
+                        <h3>Camiseta beige</h3>
+                        <p class="precio_app">Q230.00</p>
+                    </div>
+                </article>
+
+                <article class="tarjeta_compacta">
+                    <div class="imagen_contenedor">
+                        <span class="etiqueta stock">pocos en stock</span>
+                        <img src="img/condiseño3.jpg" alt="Camiseta">
+                        <button class="boton_carrito_circular">🛒</button>
+                    </div>
+                    <div class="info_producto">
+                        <h3>Camiseta Mom</h3>
+                        <p class="precio_app">Q230.00</p>
+                    </div>
+                </article>
+
+                <article class="tarjeta_compacta">
+                    <div class="imagen_contenedor">
+                        <span class="etiqueta stock">pocos en stock</span>
+                        <img src="img/lisasneutras.jpg" alt="Camiseta">
+                        <button class="boton_carrito_circular">🛒</button>
+                    </div>
+                    <div class="info_producto">
+                        <h3>algodon neutras</h3>
+                        <p class="precio_app">Q230.00</p>
+                    </div>
+                </article>
+
+                </div>
+        </section>
+
+
+
+        <section id="pantalones" class="seccion-catalogo">
+            <h2 class="titulo-categoria">pantalones</h2>
+            <div class="bloque_productos_doble">
+
+                <article class="tarjeta_compacta">
+                    <div class="imagen_contenedor">
+                        <span class="etiqueta oferta">Oferta</span>
+                        <img src="img/pantalon1.jpg" alt="pantalon1">
+                        <button class="boton_carrito_circular">🛒</button>
+                    </div>
+                    <div class="info_producto">
+                        <h3>jeans campana</h3>
+                        <p class="precio_app">Q425.00</p>
+                    </div>
+                </article>
+
+                <article class="tarjeta_compacta">
+                    <div class="imagen_contenedor">
+                        <span class="etiqueta stock">pocos en stock</span>
+                        <img src="img/momjeans1.jpg" alt="pantalon2">
+                        <button class="boton_carrito_circular">🛒</button>
+                    </div>
+                    <div class="info_producto">
+                        <h3>momjeans celeste</h3>
+                        <p class="precio_app">Q230.00</p>
+                    </div>
+                </article>
+
+                <article class="tarjeta_compacta">
+                    <div class="imagen_contenedor">
+                        <span class="etiqueta oferta">Oferta</span>
+                        <img src="img/corte recto3.jpg" alt="pantalon3">
+                        <button class="boton_carrito_circular">🛒</button>
+                    </div>
+                    <div class="info_producto">
+                        <h3>pantalon corte recto</h3>
+                        <p class="precio_app">Q350.00</p>
+                    </div>
+                </article>
+
+                <article class="tarjeta_compacta">
+                    <div class="imagen_contenedor">
+                        <img src="img/corterecto.jpg" alt="pantalon4">
+                        <button class="boton_carrito_circular">🛒</button>
+                    </div>
+                    <div class="info_producto">
+                        <h3>jeanscorte campana</h3>
+                        <p class="precio_app">Q350.00</p>
+                    </div>
+                </article>
+
+                <article class="tarjeta_compacta">
+                    <div class="imagen_contenedor">
+                        <img src="img/corterecto2.jpg" alt="pantalon5">
+                        <button class="boton_carrito_circular">🛒</button>
+                    </div>
+                    <div class="info_producto">
+                        <h3>pantalon corte recto con diseño</h3>
+                        <p class="precio_app">Q230.00</p>
+                    </div>
+                </article>
+
+                <article class="tarjeta_compacta">
+                    <div class="imagen_contenedor">
+                        <span class="etiqueta stock">pocos en stock</span>
+                        <img src="img/corterecto4.jpg" alt="pantalon6">
+                        <button class="boton_carrito_circular">🛒</button>
+                    </div>
+                    <div class="info_producto">
+                        <h3>Jeans skiny</h3>
+                        <p class="precio_app">Q230.00</p>
+                    </div>
+                </article>
+                </div>
+        </section>
+
+
+
+        <section id="abrigos" class="seccion-catalogo">
+            <h2 class="titulo-categoria">abrigos</h2>
+            <div class="bloque_productos_doble">
+
+                <article class="tarjeta_compacta">
+                    <div class="imagen_contenedor">
+                        <span class="etiqueta oferta">Oferta</span>
+                        <img src="img/abrigo negro.jpg" alt="abrigo1">
+                        <button class="boton_carrito_circular">🛒</button>
+                    </div>
+                    <div class="info_producto">
+                        <h3>abrigo elegante negro</h3>
+                        <p class="precio_app">Q420.00</p>
+                    </div>
+                </article>
+
+                <article class="tarjeta_compacta">
+                    <div class="imagen_contenedor">
+                        <span class="etiqueta stock">pocos en stock</span>
+                        <img src="img/abrigo.jpg" alt="abrigo2">
+                        <button class="boton_carrito_circular">🛒</button>
+                    </div>
+                    <div class="info_producto">
+                        <h3>abrigo elegante beige</h3>
+                        <p class="precio_app">Q450.00</p>
+                    </div>
+                </article>
+
+                <article class="tarjeta_compacta">
+                    <div class="imagen_contenedor">
+                        <span class="etiqueta oferta">Oferta</span>
+                        <img src="img/abrigocolorvino.jpg" alt="abrigo3">
+                        <button class="boton_carrito_circular">🛒</button>
+                    </div>
+                    <div class="info_producto">
+                        <h3>abrigo elegante vino</h3>
+                        <p class="precio_app">Q420.00</p>
+                    </div>
+                </article>
+
+                <article class="tarjeta_compacta">
+                    <div class="imagen_contenedor">
+                        <img src="img/chaqueta.jpg" alt="abrigo4">
+                        <button class="boton_carrito_circular">🛒</button>
+                    </div>
+                    <div class="info_producto">
+                        <h3>chaqueta de cuero cafe</h3>
+                        <p class="precio_app">Q350.00</p>
+                    </div>
+                </article>
+
+                <article class="tarjeta_compacta">
+                    <div class="imagen_contenedor">
+                        <img src="img/chaquetasneutrascuero.jpg" alt="abrigo5">
+                        <button class="boton_carrito_circular">🛒</button>
+                    </div>
+                    <div class="info_producto">
+                        <h3>chaquetas de cuero colores basicos</h3>
+                        <p class="precio_app">Q399.00</p>
+                    </div>
+                </article>
+
+                <article class="tarjeta_compacta">
+                    <div class="imagen_contenedor">
+                        <span class="etiqueta stock">pocos en stock</span>
+                        <img src="img/CHAQUETA CASUAL.jpg" alt="abrigo6">
+                        <button class="boton_carrito_circular">🛒</button>
+                    </div>
+                    <div class="info_producto">
+                        <h3>chaqueta casual de gamusa</h3>
+                        <p class="precio_app">Q460.00</p>
+                    </div>
+                </article>
+
+                <article class="tarjeta_compacta">
+                    <div class="imagen_contenedor">
+                        <span class="etiqueta stock">pocos en stock</span>
+                        <img src="img/CASUALCHAQUETA.jpg" alt="abrigo7">
+                        <button class="boton_carrito_circular">🛒</button>
+                    </div>
+                    <div class="info_producto">
+                        <h3>chaqueta beige gamusa</h3>
+                        <p class="precio_app">Q500.00</p>
+                    </div>
+                </article>
+
+                </div>
+        </section>
+
+
+
+        <section id="Ropa formal" class="seccion-catalogo">
+            <h2 class="titulo-categoria">Camisetas</h2>
+            <div class="bloque_productos_doble">
+
+                <article class="tarjeta_compacta">
+                    <div class="imagen_contenedor">
+                        <span class="etiqueta oferta">Oferta</span>
+                        <img src="img/trecuartosceleste.jpg" alt="blusa1">
+                        <button class="boton_carrito_circular">🛒</button>
+                    </div>
+                    <div class="info_producto">
+                        <h3>blusa formal manga tres cuartos celeste</h3>
+                        <p class="precio_app">Q230.00</p>
+                    </div>
+                </article>
+
+                <article class="tarjeta_compacta">
+                    <div class="imagen_contenedor">
+                        <span class="etiqueta stock">pocos en stock</span>
+                        <img src="img/trecuartosvino.jpg" alt="blusa2">
+                        <button class="boton_carrito_circular">🛒</button>
+                    </div>
+                    <div class="info_producto">
+                        <h3>blusa formal manga tres cuartos vino</h3>
+                        <p class="precio_app">Q230.00</p>
+                    </div>
+                </article>
+
+                <article class="tarjeta_compacta">
+                    <div class="imagen_contenedor">
+                        <span class="etiqueta oferta">Oferta</span>
+                        <img src="img/trescuartosverde.jpg" alt="blusa3">
+                        <button class="boton_carrito_circular">🛒</button>
+                    </div>
+                    <div class="info_producto">
+                        <h3>blusa formal manga tres cuartos verde</h3>
+                        <p class="precio_app">Q230.00</p>
+                    </div>
+                </article>
+
+                <article class="tarjeta_compacta">
+                    <div class="imagen_contenedor">
+                        <img src="img/semiformal.jpg" alt="blusa4">
+                        <button class="boton_carrito_circular">🛒</button>
+                    </div>
+                    <div class="info_producto">
+                        <h3>Camiseta perfectly</h3>
+                        <p class="precio_app">Q230.00</p>
+                    </div>
+                </article>
+
+                <article class="tarjeta_compacta">
+                    <div class="imagen_contenedor">
+                        <img src="img/semiformal2.jpg" alt="blusa5">
+                        <button class="boton_carrito_circular">🛒</button>
+                    </div>
+                    <div class="info_producto">
+                        <h3>Camiseta beige</h3>
+                        <p class="precio_app">Q230.00</p>
+                    </div>
+                </article>
+
+                <article class="tarjeta_compacta">
+                    <div class="imagen_contenedor">
+                        <span class="etiqueta stock">pocos en stock</span>
+                        <img src="img/blformalblanca1.jpg" alt="blusa6">
+                        <button class="boton_carrito_circular">🛒</button>
+                    </div>
+                    <div class="info_producto">
+                        <h3>blusa formal blanca</h3>
+                        <p class="precio_app">Q230.00</p>
+                    </div>
+                </article>
+
+                <article class="tarjeta_compacta">
+                    <div class="imagen_contenedor">
+                        <span class="etiqueta stock">pocos en stock</span>
+                        <img src="img/cuellovnavy.jpg" alt="blusa7">
+                        <button class="boton_carrito_circular">🛒</button>
+                    </div>
+                    <div class="info_producto">
+                        <h3>formal azul cuello v</h3>
+                        <p class="precio_app">Q230.00</p>
+                    </div>
+                </article>
+
+                <article class="tarjeta_compacta">
+                    <div class="imagen_contenedor">
+                        <span class="etiqueta stock">pocos en stock</span>
+                        <img src="img/cuellovrosa.jpg" alt="blusa7">
+                        <button class="boton_carrito_circular">🛒</button>
+                    </div>
+                    <div class="info_producto">
+                        <h3>formal rosa cuello v</h3>
+                        <p class="precio_app">Q230.00</p>
+                    </div>
+                </article>
+
+                <article class="tarjeta_compacta">
+                    <div class="imagen_contenedor">
+                        <span class="etiqueta stock">pocos en stock</span>
+                        <img src="img/cuellovblanco.jpg" alt="blusa8">
+                        <button class="boton_carrito_circular">🛒</button>
+                    </div>
+                    <div class="info_producto">
+                        <h3>formal blanco cuello v</h3>
+                        <p class="precio_app">Q230.00</p>
+                    </div>
+                </article>
+
+                <article class="tarjeta_compacta">
+                    <div class="imagen_contenedor">
+                        <span class="etiqueta stock">pocos en stock</span>
+                        <img src="img/pantalonesformales.jpg" alt="pantalones formales">
+                        <button class="boton_carrito_circular">🛒</button>
+                    </div>
+                    <div class="info_producto">
+                        <h3>pantalones formales</h3>
+                        <p class="precio_app">Q350.00</p>
+                    </div>
+                </article>
+
+                </div>
+        </section>
+
+        </main>
+
+    <nav class="barra-inferior">
+        <a href="index.html" class="icono-nav activo">
+            <i>🏠</i>
+            <span>Inicio</span>
+        </a> 
+        
+        <a href="favoritos.html" class="icono-nav">
+            <i>❤️</i>
+            <span>Favoritos</span>
+        </a>
+    
+        <a href="historial.html" class="icono-nav">
+            <i>📦</i>
+            <span>Pedidos</span>
+        </a> 
+        
+        <a href="vacio.html" class="icono-nav">
+            <i>🛒</i>
+            <span>Carrito</span>
+        </a> 
+        
+        <a href="perfil.html" class="icono-nav">
+            <i>👤</i>
+            <span>Perfil</span>
+        </a>
+    </nav>
 </body>
-</html>
+</html> 

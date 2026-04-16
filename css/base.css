@@ -1,11 +1,15 @@
 /* Variables y Reset */
 :root {
-    --navy: #0f172a;
+    --navy: #030e27;
+    --azulrey: #2354da;
     --celeste: #0ea5e9;
-    --violeta: #8b5cf6;
+    --violeta: #7e7494;
     --celeste-soft: #f0f9ff;
     --blanco: #ffffff;
     --fondo-pag: #f8fafc;
+    --botones: #c6dee2;
+    --oferta: #ff7e7e;
+ 
 }
 
 * {
@@ -20,3 +24,8 @@ body {
     color: var(--navy);
     padding-bottom: 90px;
 }
+
+
+/*----------------------------*/
+/* --- COMPONENTES DE CATALOGO--- */
+/*-----------------------------*/
