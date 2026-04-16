@@ -1,7 +1,7 @@
 /* --- Identidad --- */
 .logo { display: flex; align-items: center; gap: 8px; }
 .logo h1 { font-size: 1.2rem; font-weight: 800; }
-.logo span { color: var(--violeta); }
+.logo span { color: var(--celeste); }
 .img-logo { height: 40px; width: auto; display: block; }
 
 /* --- Menú Hamburguesa --- */
@@ -46,7 +46,7 @@
     text-align: center;
 }
 
-/* --- TARJETAS DE PRODUCTO: Alineación forzada --- */
+/* --- TARJETAS DE PRODUCTO: Alineación */
 .tarjeta {
     background: var(--blanco);
     border-radius: 20px;
@@ -55,7 +55,7 @@
     position: relative;
     border: 1px solid #f1f5f9;
     
-    /* Forzamos que la tarjeta respete el tamaño de la columna */
+    /* para  que la tarjeta respete el tamaño de la columna */
     width: 100%;
     display: flex;
     flex-direction: column;
