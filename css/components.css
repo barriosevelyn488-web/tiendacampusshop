@@ -403,3 +403,201 @@
     border-color: var(--celeste);
     background-color: #f9f9f9;
 }
+
+/* =========================================
+   NUEVOS COMPONENTES: CARRITO (CHECKBOX HACK)
+   ========================================= */
+
+/* --- Elementos de Lógica Ocultos --- */
+.hash-check {
+    display: none; /* Ocultamos los checkboxes que manejan la lógica */
+}
+
+/* --- ESTILOS DE LA PÁGINA CARRITO (carrito.html) --- */
+
+.contenedor-carrito {
+    padding: 20px;
+    padding-bottom: 150px; /* Espacio para que el total fijo no tape nada */
+    background-color: var(--fondo-pag);
+}
+
+/* Header del Carrito (Minimalista del Mockup) */
+.header-carrito {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    border-bottom: 1px solid #e2e8f0;
+    margin-bottom: 20px;
+}
+
+.header-carrito h1 {
+    font-size: 1.1rem;
+    color: var(--navy);
+    font-weight: 800;
+}
+
+/* Tarjeta de producto individual dentro del carrito */
+.carrito-item {
+    display: none; /* OCULTO POR DEFECTO */
+    background: white;
+    border-radius: 15px;
+    padding: 15px;
+    margin-bottom: 15px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.03);
+    align-items: center;
+    gap: 15px;
+    border: 1px solid #f1f5f9;
+}
+
+/* --- LÓGICA DEL CHECKBOX HACK PARA MOSTRAR ITEMS --- */
+/* Si el checkbox X está marcado, muestra el item X del carrito */
+#prod-chaqueta:checked ~ .contenedor-carrito #item-chaqueta,
+#prod-momjeans:checked ~ .contenedor-carrito #item-momjeans,
+#prod-camiseta:checked ~ .contenedor-carrito #item-camiseta { 
+    display: flex; 
+}
+
+/* Elementos visuales dentro de la tarjeta del carrito */
+.carrito-item-img {
+    width: 70px;
+    height: 70px;
+    background-color: var(--celeste-soft);
+    border-radius: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.carrito-item-img img {
+    max-width: 80%;
+    max-height: 80%;
+    object-fit: contain;
+}
+
+.carrito-item-info {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.carrito-item-info h3 {
+    font-size: 0.95rem;
+    color: var(--navy);
+    margin: 0;
+}
+
+.carrito-item-info p {
+    font-size: 0.8rem;
+    color: var(--violeta);
+    margin: 0;
+}
+
+.carrito-item-precio {
+    font-size: 1rem;
+    font-weight: 700;
+    color: var(--navy);
+    text-align: right;
+}
+
+/* Botón eliminar (Label ligado al checkbox para desmarcar) */
+.btn-eliminar-item {
+    color: #ef4444; /* Rojo para el tachito de basura */
+    font-size: 1.2rem;
+    cursor: pointer;
+    padding: 5px;
+    text-align: center;
+}
+
+/* --- Bloque Fijo de Total Inferior (Estático) --- */
+.carrito-total-fijo {
+    position: fixed;
+    bottom: 0; /* Lo fijamos abajo de la pantalla */
+    left: 0;
+    width: 100%;
+    background: white;
+    padding: 20px 20px 10px 20px; /* Un poco de padding abajo para celulares */
+    border-top: 1px solid #e2e8f0;
+    box-shadow: 0 -5px 15px rgba(0,0,0,0.05);
+    z-index: 900;
+}
+
+/* Estilos para las filas de Subtotal, Envío, Total */
+.fila-total {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    font-size: 0.9rem;
+    color: var(--violeta);
+}
+
+/* La fila del Total es más grande y oscura */
+.fila-total.principal {
+    font-size: 1.1rem;
+    font-weight: 800;
+    color: var(--navy);
+    margin-top: 15px;
+    margin-bottom: 20px;
+}
+
+/* Botón Proceder al Pago (Verde del Mockup) */
+.btn-proceder-pago {
+    display: block;
+    width: 100%;
+    padding: 16px;
+    background-color: #1a4731; /* El verde oscuro exacto de tu imagen */
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 12px;
+    font-weight: 700;
+    border: none;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+/* --- ESTADO VACÍO (image_5.png) --- */
+
+.carrito-vacio-state {
+    display: none; /* OCULTO POR DEFECTO */
+    text-align: center;
+    padding: 100px 20px;
+    color: var(--violeta);
+    background-color: var(--fondo-pag);
+    height: 80vh; /* Altura para centrarlo visualmente */
+}
+
+/* El círculo con el carrito tachado */
+.icono-vacio-contenedor {
+    width: 120px;
+    height: 120px;
+    background-color: var(--celeste-soft);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto 30px auto;
+}
+
+.icono-vacio-contenedor img {
+    max-width: 60%;
+}
+
+.carrito-vacio-state p {
+    font-size: 1rem;
+    color: var(--violeta);
+    margin-top: 15px;
+    line-height: 1.5;
+}
+
+/* LÓGICA CSS PARA MOSTRAR ESTADO VACÍO O TOTAL */
+/* Si TODOS los checkboxes están desmarcados (:not(:checked)) */
+#prod-chaqueta:not(:checked) ~ #prod-momjeans:not(:checked) ~ #prod-camiseta:not(:checked) ~ .contenedor-carrito .carrito-vacio-state {
+    display: block; /* Muestra el estado vacío */
+}
+
+/* Y ocultamos el bloque de total fijo si está vacío */
+#prod-chaqueta:not(:checked) ~ #prod-momjeans:not(:checked) ~ #prod-camiseta:not(:checked) ~ .carrito-total-fijo {
+    display: none; 
+}

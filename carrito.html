@@ -1,15 +1,114 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="responsive.css">
-    <link rel="stylesheet" href="componentes.css">
-    <link rel="stylesheet" href="base.css">
-    <link rel="stylesheet" href="layout.css">
-</head>
-<body>
-    
+    <title>EliShop - Mi Carrito</title>
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/components.css">
+    <link rel="stylesheet" href="css/layout.css">
+    </head>
+<body class="cuerpo-gris">
+
+    <input type="checkbox" id="prod-chaqueta" class="hash-check" checked>
+    <input type="checkbox" id="prod-momjeans" class="hash-check" checked>
+    <input type="checkbox" id="prod-camiseta" class="hash-check" checked>
+
+    <header class="barra_superior_catalogo" style="background:var(--fondo-pag); border:none;">
+        <div class="header_top">
+            <a href="producto.html" class="icono_accion" style="text-decoration:none;">←</a>
+            <h1 class="titulo_centro">Mi Carrito (3)</h1>
+            <div style="width:24px;"></div> </div>
+    </header>
+
+    <main class="contenedor-carrito">
+        
+        <div class="carrito-vacio-state">
+            <div class="icono-vacio-contenedor">
+                <img src="img/carrito-vacio-icono.png" alt="Carrito vacío">
+            </div>
+            <h2>Tu carrito está vacío :(</h2>
+            <p>Parece que aún no has añadido nada.<br>¡Explora nuestros productos!</p>
+            
+            <div style="margin-top: 30px;">
+                <a href="catalogo.html" class="btn-proceder-pago">Explorar Catálogo</a>
+            </div>
+        </div>
+
+        <article id="item-chaqueta" class="carrito-item">
+            <div class="carrito-item-img">
+                <img src="img/chaqueta.jpg" alt="Chaqueta">
+            </div>
+            <div class="carrito-item-info">
+                <h3>Chaqueta de cuero marrón</h3>
+                <p>Ref: #SKU00123</p>
+                <div style="display:flex; align-items:center; gap:8px; margin-top:5px; font-size:0.8rem;">
+                    <span style="border:1px solid #ddd; padding:2px 8px; border-radius:4px;">-</span>
+                    <span style="font-weight:700;">1</span>
+                    <span style="border:1px solid #ddd; padding:2px 8px; border-radius:4px;">+</span>
+                </div>
+            </div>
+            <div style="display:flex; flex-direction:column; align-items:flex-end; gap:15px; min-width:80px;">
+                <label for="prod-chaqueta" class="btn-eliminar-item">🗑️</label>
+                <span class="carrito-item-precio">Q450.00</span>
+            </div>
+        </article>
+
+        <article id="item-momjeans" class="carrito-item">
+            <div class="carrito-item-img">
+                <img src="img/momjeans1.jpg" alt="Mom Jeans">
+            </div>
+            <div class="carrito-item-info">
+                <h3>Mom Jeans Clásicos</h3>
+                <p>Ref: #SKU00456</p>
+                <div style="display:flex; align-items:center; gap:8px; margin-top:5px; font-size:0.8rem;">
+                    <span style="border:1px solid #ddd; padding:2px 8px; border-radius:4px;">-</span>
+                    <span style="font-weight:700;">1</span>
+                    <span style="border:1px solid #ddd; padding:2px 8px; border-radius:4px;">+</span>
+                </div>
+            </div>
+            <div style="display:flex; flex-direction:column; align-items:flex-end; gap:15px; min-width:80px;">
+                <label for="prod-momjeans" class="btn-eliminar-item">🗑️</label>
+                <span class="carrito-item-precio">Q200.00</span>
+            </div>
+        </article>
+
+        <article id="item-camiseta" class="carrito-item">
+            <div class="carrito-item-img">
+                <img src="img/camiseta.jpg" alt="Camiseta">
+            </div>
+            <div class="carrito-item-info">
+                <h3>Camiseta Orgánica Blanca</h3>
+                <p>Ref: #SKU00789</p>
+                <div style="display:flex; align-items:center; gap:8px; margin-top:5px; font-size:0.8rem;">
+                    <span style="border:1px solid #ddd; padding:2px 8px; border-radius:4px;">-</span>
+                    <span style="font-weight:700;">1</span>
+                    <span style="border:1px solid #ddd; padding:2px 8px; border-radius:4px;">+</span>
+                </div>
+            </div>
+            <div style="display:flex; flex-direction:column; align-items:flex-end; gap:15px; min-width:80px;">
+                <label for="prod-camiseta" class="btn-eliminar-item">🗑️</label>
+                <span class="carrito-item-precio">Q230.00</span>
+            </div>
+        </article>
+
+    </main>
+
+    <div class="carrito-total-fijo">
+        <div class="fila-total">
+            <span>Subtotal</span>
+            <span>Q880.00</span>
+        </div>
+        <div class="fila-total">
+            <span>Envío</span>
+            <span>Q35.00</span>
+        </div>
+        <div class="fila-total principal">
+            <span>Total</span>
+            <span>Q915.00</span>
+        </div>
+        <a href="checkout.html" class="btn-proceder-pago">Proceder al Pago</a>
+    </div>
+
 </body>
 </html>
