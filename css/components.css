@@ -88,6 +88,40 @@
     align-items: center;
 }
 
+/* Mantiene el diseño del corazón exactamente como estaba */
+.corazon-link {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: rgba(255, 255, 255, 0.9); /* Fondo blanco circular */
+    color: #ff4b2b; /* Color del corazón */
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none; /* Quita el subrayado azul de los links */
+    font-size: 1.2rem;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    border: none;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+    z-index: 10;
+}
+
+.corazon-link:hover {
+    transform: scale(1.1);
+    color: #e63946;
+}
+
+/* Asegura que el contenedor del producto permita el posicionamiento */
+.foto-producto {
+    position: relative;
+    overflow: hidden;
+    border-radius: 15px 15px 0 0;
+}
+
 .detalles h3 { font-size: 0.85rem; margin-top: 10px; font-weight: 600; color: var(--navy); }
 .precio { color: var(--celeste); font-weight: 800; display: block; margin: 5px 0 10px; }
 
@@ -345,7 +379,7 @@
 }
 
 .btn-comprar-full {
-    background-color: var(--navy); /* Usando el color oscuro de tu mockup */
+    background-color: var(--navy); /* Usando el color oscuro de el mockup */
     color: white;
     width: 100%;
     padding: 18px;
@@ -425,8 +459,7 @@
     display: flex !important; 
 }
 
-/* 4. LÓGICA DEL ESTADO VACÍO (Soluciona la pregunta del profe) */
-/* "Profesor, si los 3 checks principales NO están marcados, el CSS muestra el bloque vacío" */
+/* 4. LÓGICA DEL ESTADO VACÍO */
 #check-chaqueta:not(:checked) ~ #check-momjeans:not(:checked) ~ #check-camiseta:not(:checked) ~ .contenedor-carrito .carrito-vacio-state {
     display: flex !important;
     flex-direction: column;
@@ -525,4 +558,71 @@
     color: var(--violeta);
     margin-bottom: 20px;
     opacity: 0.3;
+}
+
+/* --- LÓGICA DE FAVORITOS --- */
+.tarjeta-favorito, .favoritos-vacio-state { display: none !important; }
+
+/* Mostrar si el checkbox está marcado */
+#fav-chaqueta:checked ~ .contenedor-favoritos #item-fav-chaqueta,
+#fav-momjeans:checked ~ .contenedor-favoritos #item-fav-momjeans,
+#fav-camiseta:checked ~ .contenedor-favoritos #item-fav-camiseta {
+    display: block !important;
+}
+
+/* Estado vacío si nada está seleccionado */
+#fav-chaqueta:not(:checked) ~ #fav-momjeans:not(:checked) ~ #fav-camiseta:not(:checked) ~ .contenedor-favoritos .favoritos-vacio-state {
+    display: flex !important;
+    flex-direction: column;
+    align-items: center;
+    padding: 80px 20px;
+    text-align: center;
+}
+
+/* --- ESTILOS VISUALES --- */
+.tarjeta-favorito {
+    background: var(--blanco);
+    border-radius: 15px;
+    overflow: hidden;
+    position: relative;
+    margin-bottom: 15px;
+    border: 1px solid var(--borde);
+    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+}
+
+.tarjeta-favorito img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+}
+
+.info-fav {
+    padding: 12px;
+}
+
+.info-fav h3 {
+    font-size: 0.9rem;
+    color: var(--navy);
+    margin: 0;
+}
+
+.precio-fav {
+    color: var(--celeste);
+    font-weight: 800;
+    font-size: 1rem;
+}
+
+.btn-quitar-fav {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: var(--blanco);
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
 }

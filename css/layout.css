@@ -164,3 +164,18 @@
     border-radius: 20px;
     overflow: hidden;
 }
+
+/* =========================================
+   NUEVOS ESTILOS: PAGINA favoritos.HTML
+   ========================================= */
+
+.contenedor-favoritos {
+    padding: 20px;
+    padding-bottom: 100px; /* Espacio para la barra inferior */
+}
+
+.grid-favoritos {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Dos columnas en móvil */
+    gap: 15px;
+}

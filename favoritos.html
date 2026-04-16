@@ -1,11 +1,88 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>EliShop - Mis Favoritos</title>
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/components.css">
+    <link rel="stylesheet" href="css/layout.css">
 </head>
-<body>
-    
+<body class="cuerpo-gris">
+
+    <input type="checkbox" id="fav-chaqueta" class="hash-check" checked>
+    <input type="checkbox" id="fav-momjeans" class="hash-check">
+    <input type="checkbox" id="fav-camiseta" class="hash-check" checked>
+
+    <header class="barra_superior_catalogo" style="background:var(--blanco); border-bottom:1px solid var(--borde);">
+        <div class="header_top">
+            <a href="catalogo.html" class="icono_accion" style="text-decoration:none; color:var(--navy);">←</a>
+            <h1 class="titulo_centro" style="color:var(--navy); font-size: 1.2rem;">Mis Favoritos</h1>
+            <div style="width:24px;"></div> 
+        </div>
+    </header>
+
+    <main class="contenedor-favoritos">
+        
+        <div class="favoritos-vacio-state">
+            <div class="icono-vacio-texto">❤️‍🩹</div>
+            <h2>Aún no tienes favoritos</h2>
+            <p>Guarda los artículos que más te gusten para verlos aquí más tarde.</p>
+            <a href="catalogo.html" class="btn-celeste-pago" style="margin-top: 20px; text-decoration: none;">Ir a el catalogo</a>
+        </div>
+
+        <div class="grid-favoritos">
+            <article id="item-fav-chaqueta" class="tarjeta-favorito">
+                <img src="img/chaqueta.jpg" alt="Chaqueta">
+                <div class="info-fav">
+                    <h3>Chaqueta de cuero</h3>
+                    <span class="precio-fav">Q450.00</span>
+                </div>
+                <label for="fav-chaqueta" class="btn-quitar-fav">❤️</label>
+            </article>
+
+            <article id="item-fav-momjeans" class="tarjeta-favorito">
+                <img src="img/momjeans1.jpg" alt="Mom Jeans">
+                <div class="info-fav">
+                    <h3>Mom Jeans</h3>
+                    <span class="precio-fav">Q200.00</span>
+                </div>
+                <label for="fav-momjeans" class="btn-quitar-fav">❤️</label>
+            </article>
+
+            <article id="item-fav-camiseta" class="tarjeta-favorito">
+                <img src="img/camiseta.jpg" alt="Camiseta">
+                <div class="info-fav">
+                    <h3>Camiseta Orgánica</h3>
+                    <span class="precio-fav">Q230.00</span>
+                </div>
+                <label for="fav-camiseta" class="btn-quitar-fav">❤️</label>
+            </article>
+        </div>
+    </main>
+
+ <nav class="barra-inferior">
+        <a href="index.html" class="icono-nav activo">
+            <i>🏠</i>
+            <span>Inicio</span>
+        </a> 
+        <a href="favoritos.html" class="icono-nav">
+            <i>❤️</i>
+            <span>Favoritos</span>
+        </a>
+        <a href="historial.html" class="icono-nav">
+            <i>📦</i>
+            <span>Pedidos</span>
+        </a> 
+        <a href="carrito.html" class="icono-nav">
+            <i>🛒</i>
+            <span>Carrito</span>
+        </a> 
+        <a href="perfil.html" class="icono-nav">
+            <i>👤</i>
+            <span>Perfil</span>
+        </a>
+    </nav>
+
 </body>
 </html>

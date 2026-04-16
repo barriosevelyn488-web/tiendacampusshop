@@ -1,15 +1,15 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> EliShop inicio</title>
+    <title>EliShop - Inicio</title>
     <link rel="stylesheet" href="css/base.css">
     <link rel="stylesheet" href="css/components.css">
     <link rel="stylesheet" href="css/layout.css">
     <link rel="stylesheet" href="css/responsive.css">
 </head>
-<body>
+<body class="cuerpo-gris">
     
     <header class="barra_superior">
         <input type="checkbox" id="checkMenu" class="oculto">
@@ -20,28 +20,26 @@
             <img src="img/Elishop.png" alt="logo" class="img-logo">
         </div>
     
-        <a href="vacio.html" class="carrito">🛒</a>
+        <a href="carrito.html" class="carrito">🛒</a>
     
         <nav class="menu-desplegable">
             <ul class="lista_navegacion">
                 <li><a href="index.html">Inicio</a></li>
-                <li><a href="catalogo.html">catalogo</a></li>
+                <li><a href="catalogo.html">Catálogo</a></li>
                 <li><a href="perfil.html">Mi Perfil</a></li>
                 <li><a href="contacto.html">Contacto</a></li>
             </ul>
         </nav>
     </header>
 
-
     <main class="contenedor1">
         <section class="seccion-buscar">
-            <input type="text" placeholder="que prenda buscas?" class="entrada-busqueda">
+            <input type="text" placeholder="¿Qué prenda buscas?" class="entrada-busqueda">
         </section>
 
         <section class="categorias-populares">
             <h2 class="titulo-seccion">Categorías Populares</h2>
             <div class="contenedor-categorias">
-                
                 <div class="item-categoria">
                     <a href="catalogo.html#abrigos" class="enlace-categoria">
                         <div class="circulo-icono">
@@ -71,24 +69,20 @@
                         <span>Pantalones</span>
                     </a>
                 </div>
-        
             </div>
         </section>
-
-
 
         <section class="novedades">
             <h2 class="titulo-seccion">Novedades</h2>
             
             <div class="bloque-productos">
-                
                 <article class="tarjeta">
                     <div class="foto-producto">
-                        <img src="img/chaqueta.jpg" alt="chaqueta">
-                        <button class="corazon">❤</button>
+                        <img src="img/chaqueta.jpg" alt="Chaqueta">
+                        <a href="favoritos.html" class="corazon-link">❤</a>
                     </div>
                     <div class="detalles">
-                        <h3>Chaqueta de cuero marron</h3>
+                        <h3>Chaqueta de cuero marrón</h3>
                         <p class="precio">Q450</p>
                         <a href="producto.html#abr-cuero" class="enlace-ver">Ver más</a>
                     </div>
@@ -97,164 +91,64 @@
                 <article class="tarjeta">
                     <div class="foto-producto">
                         <img src="img/camiseta.jpg" alt="Camiseta">
-                        <button class="corazon">❤</button>
+                        <a href="favoritos.html" class="corazon-link">❤</a>
                     </div>
                     <div class="detalles">
                         <h3>Camiseta Blanca</h3>
                         <p class="precio">Q230</p>
-                        <a href="producto.html#cam-blanca"class="enlace-ver">Ver más</a>
+                        <a href="producto.html#cam-blanca" class="enlace-ver">Ver más</a>
                     </div>
                 </article>
         
                 <article class="tarjeta">
                     <div class="foto-producto">
-                        <img src="img/abrigo.jpg" alt="abrigo"> 
-                        <button class="corazon">❤</button>
+                        <img src="img/abrigo.jpg" alt="Abrigo"> 
+                        <a href="favoritos.html" class="corazon-link">❤</a>
                     </div>
                     <div class="detalles">
                         <h3>Abrigo de piel</h3>
                         <p class="precio">Q1200</p>
-                        <a href="producto.html#abr-piel" class="enlace-ver">ver mas</a>
-                    </div>
-                </article>
-        
-                <article class="tarjeta">
-                    <div class="foto-producto">
-                        <img src="img/semiformal.jpg" alt="Camisa semiformal"> 
-                        <button class="corazon">❤</button>
-                    </div>
-                    <div class="detalles">
-                        <h3>Camisa semiformal</h3>
-                        <p class="precio">Q200</p>
-                        <a href="producto.html" class="enlace-ver">ver mas</a>
+                        <a href="producto.html#abr-piel" class="enlace-ver">Ver más</a>
                     </div>
                 </article>
 
                 <article class="tarjeta">
                     <div class="foto-producto">
-                        <img src="img/condiseño3.jpg" alt="Camisetas con diseño">
-                        <button class="corazon">❤</button>
-                    </div>
-                    <div class="detalles">
-                        <h3>Elije tu diseño</h3>
-                        <p class="precio">Q200</p>
-                        <a href="producto.html" class="enlace-ver">ver mas</a>
-                    </div>
-                </article>
-
-                <article class="tarjeta">
-                    <div class="foto-producto">
-                        <img src="img/momjeans1.jpg" alt="momjeans"> 
-                        <button class="corazon">❤</button>
+                        <img src="img/momjeans1.jpg" alt="Mom Jeans"> 
+                        <a href="favoritos.html" class="corazon-link">❤</a>
                     </div>
                     <div class="detalles">
                         <h3>Mom Jeans</h3>
                         <p class="precio">Q200</p>
-                        <a href="producto.html" class="enlace-ver">ver mas</a>
+                        <a href="producto.html#pant-mom" class="enlace-ver">Ver más</a>
                     </div>
                 </article>
-
-                <article class="tarjeta">
-                    <div class="foto-producto">
-                        <img src="img/pantalonesformales.jpg" alt="pantalones formales"> 
-                        <button class="corazon">❤</button>
-                    </div>
-                    <div class="detalles">
-                        <h3>pantalones formales</h3>
-                        <p class="precio">Q200</p>
-                        <a href="producto.html" class="enlace-ver">ver mas</a>
-                    </div>
-                </article>
-
-                <article class="tarjeta">
-                    <div class="foto-producto">
-                        <img src="img/corterecto.jpg"alt="Jeans corte recto"> 
-                        <button class="corazon">❤</button>
-                    </div>
-                    <div class="detalles">
-                        <h3>Jeans corte recto</h3>
-                        <p class="precio">Q200</p>
-                        <a href="producto.html" class="enlace-ver">ver mas</a>
-                    </div>
-                </article>
-
-                <article class="tarjeta">
-                    <div class="foto-producto">
-                        <img src="img/trescuartosverde.jpg"alt="camisa manga tres cuartos"> 
-                        <button class="corazon">❤</button>
-                    </div>
-                    <div class="detalles">
-                        <h3>camisa manga tres cuartos</h3>
-                        <p class="precio">Q200</p>
-                        <a href="producto.html" class="enlace-ver">ver mas</a>
-                    </div>
-                </article>
-
-                <article class="tarjeta">
-                    <div class="foto-producto">
-                        <img src="img/CASUALCHAQUETA.jpg"alt="camisa manga tres cuartos"> 
-                        <button class="corazon">❤</button>
-                    </div>
-                    <div class="detalles">
-                        <h3>chaqueta casual</h3>
-                        <p class="precio">Q200</p>
-                        <a href="producto.html" class="enlace-ver">ver mas</a>
-                    </div>
-                </article>
-
-                <article class="tarjeta">
-                    <div class="foto-producto">
-                        <img src="img/cuellovblanco.jpg"alt="camisa formal cuello v"> 
-                        <button class="corazon">❤</button>
-                    </div>
-                    <div class="detalles">
-                        <h3>blusa formal cuello V</h3>
-                        <p class="precio">Q200</p>
-                        <a href="producto.html" class="enlace-ver">ver mas</a>
-                    </div>
-                </article>
-
-                <article class="tarjeta">
-                    <div class="foto-producto">
-                        <img src="img/abrigo negro.jpg"alt="camisa formal cuello v"> 
-                        <button class="corazon">❤</button>
-                    </div>
-                    <div class="detalles">
-                        <h3>chaqueta formal color negro</h3>
-                        <p class="precio">Q200</p>
-                        <a href="producto.html" class="enlace-ver">ver mas</a>
-                    </div>
-                </article>
-        
-            </div> 
+                
+                </div> 
         </section>
-        </main>
+    </main>
 
     <nav class="barra-inferior">
         <a href="index.html" class="icono-nav activo">
             <i>🏠</i>
             <span>Inicio</span>
         </a> 
-        
         <a href="favoritos.html" class="icono-nav">
             <i>❤️</i>
             <span>Favoritos</span>
         </a>
-    
         <a href="historial.html" class="icono-nav">
             <i>📦</i>
             <span>Pedidos</span>
         </a> 
-        
-        <a href="vacio.html" class="icono-nav">
+        <a href="carrito.html" class="icono-nav">
             <i>🛒</i>
             <span>Carrito</span>
         </a> 
-        
         <a href="perfil.html" class="icono-nav">
             <i>👤</i>
             <span>Perfil</span>
         </a>
     </nav>
 </body>
-</html> 
+</html>
