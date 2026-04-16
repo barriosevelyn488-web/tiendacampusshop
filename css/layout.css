@@ -109,3 +109,58 @@
     gap: 15px;
     width: 100%;
 }
+
+/*--------------------------------*/
+/* --- LAYOUT DE PRODUCTO DETALLE --- */
+/*--------------------------------*/
+
+.seccion-detalles {
+    padding: 20px;
+    padding-bottom: 100px; /* Espacio para la barra-inferior */
+}
+
+.articulo-detalle {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin-bottom: 50px; /* Separación entre cada producto de la lista */
+    scroll-margin-top: 80px; /* Para que al usar el ID (#), el header no tape el título */
+}
+
+.imagen-detalle-contenedor {
+    width: 100%;
+    height: 380px; /* Cambia el 32px por este valor */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+/* =========================================
+   NUEVOS ESTILOS: PAGINA PRODUCTO.HTML
+   ========================================= */
+
+   .seccion-detalles {
+    padding: 20px;
+    padding-bottom: 120px; /* Para que la nav inferior no tape el contenido */
+}
+
+.articulo-detalle {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-bottom: 80px; /* Espacio grande para simular cambio de página al scrollear */
+    scroll-margin-top: 100px; /* Importante para que el ancla # no quede tapada por el header */
+}
+
+.imagen-detalle-contenedor {
+    width: 100%;
+    height: 380px; /* Altura ideal para pantallas de teléfono */
+    background-color: var(--celeste-soft);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    overflow: hidden;
+}

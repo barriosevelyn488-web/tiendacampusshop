@@ -172,6 +172,7 @@
     font-weight: 800;
     color: #000;
     margin: 0;
+    padding: top;
 }
 
 .contenedor_filtros {
@@ -249,7 +250,7 @@
 }
 
 .precio_app {
-    color: #d0d0d0; /* Gris clarito */
+    color: var(--violeta);
     font-size: 0.85rem;
     font-weight: 600;
 }
@@ -257,6 +258,148 @@
 .titulo-categoria {
     font-size: 1.3rem;
     font-weight: 800;
-    margin-bottom: 20px; /* <--- Cambia este número para dar más o menos espacio */
+    margin-bottom: 20px; 
     display: block; /* Asegura que el margen se aplique correctamente */
+    padding-top: 30px;
+}
+
+.enlace-categoria {
+    text-decoration: none;  /* Quita el subrayado */
+    color: inherit;         /* Hereda el color del texto original */
+    display: flex;          /* Permite usar flexbox */
+    flex-direction: column; /* Alinea icono arriba y texto abajo */
+    align-items: center;    /* Centra todo horizontalmente */
+    gap: 8px;               /* Espacio entre el círculo y el nombre */
+}
+
+/* Evita que el color cambie después de hacer clic */
+.enlace-categoria:visited {
+    color: inherit;
+}
+
+
+/*--------------------------------*/
+/* --- COMPONENTES DE DETALLE --- */
+/*--------------------------------*/
+
+.tarjeta-detallada {
+    background: var(--blanco);
+    border-radius: 25px;
+    padding: 20px;
+    border: 1px solid #f1f5f9;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.03);
+}
+
+.imagen-detalle-contenedor img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: cover; /* O 'contain' si prefieres que se vea la prenda completa sin recortes */
+}
+
+.precio-grande {
+    font-size: 1.8rem;
+    font-weight: 800;
+    color: var(--celeste); /* Tu color de acento */
+    margin: 10px 0;
+    display: block;
+}
+
+.texto-descripcion {
+    font-size: 0.95rem;
+    color: var(--violeta);
+    line-height: 1.6;
+    margin-bottom: 25px;
+}
+
+/* Reutilizamos el estilo de botón pero más grande para la acción principal */
+.btn-comprar-full {
+    background-color: var(--celeste);
+    color: var(--blanco);
+    width: 100%;
+    padding: 16px;
+    border: none;
+    border-radius: 15px;
+    font-weight: 700;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: transform 0.2s;
+}
+
+.btn-comprar-full:active {
+    transform: scale(0.98);
+}
+
+/* AJUSTE DE IMAGEN PARA DETALLE */
+.imagen-detalle-contenedor img {
+    max-width: 90%;
+    max-height: 90%;
+    object-fit: contain; /* Esto evita que la imagen se vea "gigante" o recortada */
+}
+
+.precio-grande {
+    font-size: 1.8rem;
+    font-weight: 800;
+    color: var(--celeste);
+    display: block;
+    margin: 10px 0;
+}
+
+.btn-comprar-full {
+    background-color: var(--navy); /* Usando el color oscuro de tu mockup */
+    color: white;
+    width: 100%;
+    padding: 18px;
+    border: none;
+    border-radius: 15px;
+    font-weight: 700;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+/* --- ESTILOS PARA BOTONES DE TALLA --- */
+
+/* Título de la sección "Talla" */
+.etiqueta-pequena {
+    font-size: 0.8rem;
+    color: var(--navy); /* Usando el azul oscuro de tu paleta */
+    margin-bottom: 10px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+/* Contenedor para alinear los círculos */
+.contenedor-botones-talla {
+    display: flex;
+    gap: 12px; /* Espacio entre cada botón */
+    margin-bottom: 25px;
+}
+
+/* Estilo del botón circular */
+.btn-talla {
+    width: 42px;
+    height: 42px;
+    border-radius: 50%; /* Hace que el botón sea un círculo perfecto */
+    border: 1px solid #e0e0e0;
+    background-color: white;
+    color: var(--navy);
+    font-weight: 600;
+    font-size: 0.9rem;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.3s ease;
+}
+
+/* Estado Activo: Cuando la talla está seleccionada */
+.btn-talla.activo {
+    background-color: var(--navy); /* Fondo oscuro como en el mockup */
+    color: white; /* Texto blanco para que resalte */
+    border-color: var(--navy);
+}
+
+/* Efecto hover (opcional para cuando pasas el mouse) */
+.btn-talla:hover {
+    border-color: var(--celeste);
+    background-color: #f9f9f9;
 }
