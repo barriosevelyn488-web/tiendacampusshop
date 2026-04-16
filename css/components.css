@@ -927,3 +927,48 @@
     text-decoration: none;
     font-weight: bold;
 }
+
+/* TARJETAS DE HISTORIAL */
+.tarjeta-orden {
+    background: white;
+    border-radius: 15px;
+    padding: 15px;
+    border: 1px solid #eee;
+}
+
+.encabezado-orden {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 5px;
+}
+
+.id-orden { font-weight: 800; color: var(--navy); }
+.precio-orden { font-weight: 800; }
+.fecha-orden { color: #888; font-size: 0.85rem; margin: 0 0 15px 0; }
+
+.pie-orden {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* TAGS DE ESTADO */
+.estado {
+    padding: 6px 12px;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    font-weight: bold;
+}
+
+.tag-entregado { background-color: #e8f5e9; color: #2e7d32; }
+.tag-camino { background-color: #fff3e0; color: #ef6c00; }
+.tag-cancelado { background-color: #ffebee; color: #c62828; }
+
+.btn-detalle {
+    text-decoration: none;
+    color: #666;
+    font-size: 0.85rem;
+    background: #f5f5f5;
+    padding: 8px 12px;
+    border-radius: 10px;
+}
