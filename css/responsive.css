@@ -1,34 +1,83 @@
-/* --- RESPONSIVE DESIGN --- */
+/* --- DISEÑO PROFESIONAL PARA ESCRITORIO (min-width: 1024px) --- */
+@media screen and (min-width: 1024px) {
 
-/* Para tablets y escritorio (pantallas mayores a 768px) */
-@media screen and (min-width: 768px) {
-    .contenedor-checkout, 
-    .contenedor-historial {
-        max-width: 800px; /* Se ensancha un poco más en PC */
-        margin: 40px auto;
-        background: white;
-        border-radius: 20px;
-        box-shadow: 0 10px 30px rgba(0,0,0,0.1);
-        padding: 40px;
+    /* 1. Transformación de la Barra de Navegación */
+    .navbar-inferior {
+        position: fixed;
+        top: 0; /* Pasa de abajo hacia arriba */
+        bottom: auto;
+        height: 70px;
+        background-color: var(--blanco);
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0 10%;
+        box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+        z-index: 1000;
+        border-top: none;
     }
 
-    .lista-metodos-pago {
+    .nav-item {
+        flex-direction: row; /* Icono y texto a la par */
+        gap: 10px;
+        font-size: 1rem;
+        color: var(--navy);
+        transition: 0.3s;
+    }
+
+    .nav-item.activo {
+        color: var(--celeste);
+        border-bottom: 2px solid var(--celeste);
+    }
+
+    /* 2. Ajuste de Tarjetas del Historial (Estilo Mic/Kinder) */
+    .contenedor-historial {
         display: grid;
-        grid-template-columns: 1fr 1fr; /* Los métodos de pago se ponen en dos columnas */
+        grid-template-columns: repeat(2, 1fr); /* Dos tarjetas por fila en PC */
+        gap: 30px;
+        margin-top: 100px; /* Para que no la tape la barra superior */
+        max-width: 1200px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .tarjeta-orden {
+        display: flex;
+        flex-direction: column;
+        overflow: hidden;
+        border: none;
+        background: #fdfdfd;
+        box-shadow: 0 5px 20px rgba(0,0,0,0.03);
+        transition: transform 0.3s;
+    }
+
+    .tarjeta-orden:hover {
+        transform: translateY(-5px);
+    }
+
+    /* 3. Adaptación de las Imágenes en las Tarjetas */
+    .pie-orden {
+        display: flex;
+        align-items: center;
         gap: 20px;
     }
 
-    .barra_superior {
-        padding: 20px 0;
+    /* Si tienes imágenes dentro de la tarjeta, forzamos su visibilidad */
+    .img-producto-historial {
+        width: 120px; /* Más grandes en escritorio */
+        height: 120px;
+        object-fit: cover;
+        border-radius: 12px;
     }
-}
 
-/* Ajuste para pantallas muy pequeñas */
-@media screen and (max-width: 380px) {
-    .titulo_centro {
-        font-size: 1.1rem;
-    }
-    .btn-principal-pago {
-        font-size: 0.9rem;
+    /* 4. Contenedor de Checkout (Centrado y elegante) */
+    .contenedor-checkout {
+        margin-top: 120px;
+        display: grid;
+        grid-template-columns: 1.5fr 1fr; /* Formulario a la izquierda, resumen a la derecha */
+        gap: 40px;
+        max-width: 1100px;
+        margin-left: auto;
+        margin-right: auto;
     }
 }
