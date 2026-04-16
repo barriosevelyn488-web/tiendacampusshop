@@ -1,15 +1,86 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="responsive.css">
-    <link rel="stylesheet" href="componentes.css">
-    <link rel="stylesheet" href="base.css">
-    <link rel="stylesheet" href="layout.css">
+    <title>EliShop - Perfil</title>
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/components.css">
+    <link rel="stylesheet" href="css/layout.css">
+    <link rel="stylesheet" href="css/responsive.css">
 </head>
-<body>
-    
+<body class="cuerpo-gris">
+
+    <header class="barra_superior">
+        <div class="header_contenido_centro">
+            <h1 class="titulo_seccion_header">Perfil</h1>
+        </div>
+    </header>
+
+    <main class="contenedor-perfil">
+        <section class="seccion-usuario">
+            <div class="avatar-contenedor">
+                <div class="avatar-circulo">
+                    <span class="icono-usuario-avatar">👤</span>
+                </div>
+            </div>
+            <h2 class="nombre-usuario">Ana Torres</h2>
+            <p class="email-usuario">ana.torres@email.com</p>
+        </section>
+
+        <nav class="grid-opciones">
+            <a href="historial.html" class="tarjeta-perfil">
+                <div class="icono-contenedor verde">
+                    <span class="emoji-perfil">📦</span>
+                </div>
+                <h3>Mis Pedidos</h3>
+            </a>
+
+            <a href="direcciones.html" class="tarjeta-perfil">
+                <div class="icono-contenedor verde">
+                    <span class="emoji-perfil">📍</span>
+                </div>
+                <h3>Direcciones</h3>
+            </a>
+
+            <a href="configuracion.html" class="tarjeta-perfil">
+                <div class="icono-contenedor verde">
+                    <span class="emoji-perfil">⚙️</span>
+                </div>
+                <h3>Configuración</h3>
+            </a>
+
+            <a href="index.html" class="tarjeta-perfil">
+                <div class="icono-contenedor rojo">
+                    <span class="emoji-perfil">➔</span>
+                </div>
+                <h3 class="texto-rojo">Cerrar Sesión</h3>
+            </a>
+        </nav>
+    </main>
+
+    <nav class="barra-inferior">
+        <a href="index.html" class="icono-nav">
+            <i>🏠</i>
+            <span>Inicio</span>
+        </a> 
+        <a href="catalogo.html" class="icono-nav">
+            <i>📋</i>
+            <span>Categorías</span>
+        </a>
+        <a href="carrito.html" class="icono-nav">
+            <i>🛒</i>
+            <span>Carrito</span>
+        </a> 
+        <a href="favoritos.html" class="icono-nav">
+            <i>❤️</i>
+            <span>Favoritos</span>
+        </a> 
+        <a href="perfil.html" class="icono-nav activo">
+            <i>👤</i>
+            <span>Perfil</span>
+        </a>
+    </nav>
+
 </body>
 </html>

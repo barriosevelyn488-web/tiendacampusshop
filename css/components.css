@@ -626,3 +626,74 @@
     cursor: pointer;
     box-shadow: 0 2px 5px rgba(0,0,0,0.2);
 }
+
+/* --- ESTILOS DE PERFIL (GRID) --- */
+.seccion-usuario {
+    text-align: center;
+    padding: 20px 0;
+}
+
+.avatar-circulo {
+    width: 120px;
+    height: 120px;
+    background-color: #f0dcc5; /* Color piel suave de tu imagen */
+    border-radius: 50%;
+    margin: 0 auto 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 3rem;
+}
+
+.nombre-usuario {
+    font-size: 1.5rem;
+    color: #1a1a1a;
+    margin-bottom: 5px;
+}
+
+.email-usuario {
+    color: #888;
+    font-size: 0.9rem;
+}
+
+/* Grid de 2 columnas */
+.grid-opciones {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+    padding: 15px;
+}
+
+.tarjeta-perfil {
+    background: white;
+    border-radius: 15px;
+    padding: 20px;
+    text-decoration: none;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* Alineado a la izquierda */
+    border: 1px solid #f0f0f0;
+    transition: background 0.2s;
+}
+
+.tarjeta-perfil:active {
+    background: #f9f9f9;
+}
+
+.icono-contenedor {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.verde { color: #2d5a27; } /* Color verde bosque de los iconos */
+.rojo { color: #d90429; }
+
+.tarjeta-perfil h3 {
+    font-size: 0.95rem;
+    color: #333;
+    font-weight: 600;
+}
+
+.texto-rojo {
+    color: #d90429 !important;
+}
