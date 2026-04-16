@@ -1,15 +1,74 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="responsive.css">
-    <link rel="stylesheet" href="componentes.css">
-    <link rel="stylesheet" href="base.css">
-    <link rel="stylesheet" href="layout.css">
+    <title>EliShop - Checkout</title>
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/components.css">
+    <link rel="stylesheet" href="css/layout.css">
 </head>
-<body>
-    
+<body class="cuerpo-gris">
+
+    <header class="barra_superior">
+        <div class="header_top">
+            <a href="carrito.html" class="icono_accion">←</a>
+            <h1 class="titulo_centro">Checkout</h1>
+            <div style="width:24px;"></div> 
+        </div>
+    </header>
+
+    <main class="contenedor-checkout">
+        <section class="seccion-checkout">
+            <h2 class="titulo-checkout">Envío</h2>
+            <input type="text" placeholder="Nombre Completo" class="input-checkout">
+            <input type="text" placeholder="Dirección" class="input-checkout">
+            <input type="text" placeholder="Ciudad" class="input-checkout">
+        </section>
+
+        <section class="seccion-checkout">
+            <h2 class="titulo-checkout">Método de Pago</h2>
+            <div class="lista-metodos-pago">
+                
+                <a href="formtarjeta.html" class="tarjeta-pago-fila">
+                    <div class="circulo-selector"></div>
+                    <span class="icono-pago">💳</span>
+                    <span class="nombre-pago">Visa</span>
+                </a>
+
+                <a href="formtarjeta.html" class="tarjeta-pago-fila">
+                    <div class="circulo-selector"></div>
+                    <span class="icono-pago">💳</span>
+                    <span class="nombre-pago">MasCard</span>
+                </a>
+
+                <a href="exitoso.html" class="tarjeta-pago-fila">
+                    <div class="circulo-selector"></div>
+                    <span class="icono-pago">🚚</span>
+                    <span class="nombre-pago">Contra Entrega</span>
+                </a>
+            </div>
+        </section>
+
+        <section class="resumen-checkout">
+            <h3 class="titulo-resumen">Resumen de tu Orden</h3>
+            <div class="fila-producto">
+                <img src="img/chaqueta.jpg" alt="Producto" class="img-mini">
+                <div class="info-producto">
+                    <p class="txt-negrita">Chaqueta de cuero café</p>
+                    <p class="txt-gris">Cantidad: 1</p>
+                </div>
+                <span class="txt-negrita">$450.00</span>
+            </div>
+            <div class="fila-total">
+                <span class="total-label">Total</span>
+                <span class="total-monto">$450.00</span>
+            </div>
+        </section>
+
+        <div class="contenedor-boton-fijo">
+            <p class="txt-ayuda">Selecciona un método para pagar</p>
+        </div>
+    </main>
 </body>
 </html>

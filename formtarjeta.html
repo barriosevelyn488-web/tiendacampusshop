@@ -1,15 +1,53 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="responsive.css">
-    <link rel="stylesheet" href="componentes.css">
-    <link rel="stylesheet" href="base.css">
-    <link rel="stylesheet" href="layout.css">
+    <title>EliShop - Pago con Tarjeta</title>
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/components.css">
+    <link rel="stylesheet" href="css/layout.css">
 </head>
-<body>
-    
+<body class="cuerpo-gris">
+
+    <header class="barra_superior">
+        <div class="header_top">
+            <a href="checkout.html" class="icono_accion">←</a>
+            <h1 class="titulo_centro">Pago con Tarjeta</h1>
+            <div style="width:24px;"></div> 
+        </div>
+    </header>
+
+    <main class="contenedor-checkout">
+        <section class="seccion-checkout">
+            <h2 class="titulo-checkout">Detalles de la Tarjeta</h2>
+            
+            <div class="grupo-entrada">
+                <label>Nombre en la Tarjeta</label>
+                <input type="text" placeholder="Como aparece en la tarjeta" class="input-checkout">
+            </div>
+
+            <div class="grupo-entrada">
+                <label>Número de Tarjeta</label>
+                <input type="text" placeholder="0000 0000 0000 0000" class="input-checkout">
+            </div>
+
+            <div class="fila-doble">
+                <div class="grupo-entrada">
+                    <label>Fecha de Expiración</label>
+                    <input type="text" placeholder="MM/AA" class="input-checkout">
+                </div>
+                <div class="grupo-entrada">
+                    <label>CVV</label>
+                    <input type="password" placeholder="123" class="input-checkout">
+                </div>
+            </div>
+        </section>
+
+        <div class="contenedor-boton-fijo">
+            <a href="exitoso.html" class="btn-principal-pago">Confirmar Pago</a>
+        </div>
+    </main>
+
 </body>
 </html>

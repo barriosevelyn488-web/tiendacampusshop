@@ -697,3 +697,233 @@
 .texto-rojo {
     color: #d90429 !important;
 }
+
+
+/* --- COMPONENTES COMPLETOS --- */
+
+.titulo-checkout { 
+    font-size: 1.3rem; 
+    font-weight: 800; 
+    margin-bottom: 15px;
+}
+
+.input-checkout {
+    width: 100%;
+    padding: 14px;
+    border: 1px solid #ddd;
+    border-radius: 12px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+}
+
+/* TARJETA DE PAGO (CORRECCIÓN DE ALINEACIÓN) */
+.tarjeta-pago-fila {
+    display: flex;
+    align-items: center; /* Alinea círculo e iconos al centro vertical */
+    background: white;
+    border: 1.5px solid #eee;
+    border-radius: 12px;
+    padding: 15px;
+    cursor: pointer;
+    gap: 15px;
+}
+
+.circulo-selector {
+    width: 24px;
+    height: 24px;
+    border: 2px solid #ccc;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+}
+
+.punto-centro {
+    width: 12px;
+    height: 12px;
+    background-color: transparent;
+    border-radius: 50%;
+}
+
+/* COLORES DE TU PROYECTO */
+.radio-oculto:checked + .tarjeta-pago-fila {
+    border-color: var(--color-azul-cian, #0097a7);
+    background-color: #f0fdfd;
+}
+
+.radio-oculto:checked + .tarjeta-pago-fila .circulo-selector {
+    border-color: var(--color-azul-cian, #0097a7);
+}
+
+.radio-oculto:checked + .tarjeta-pago-fila .punto-centro {
+    background-color: var(--color-azul-cian, #0097a7);
+}
+
+.radio-oculto { display: none; }
+
+/* RESUMEN DE ORDEN */
+.resumen-checkout {
+    background-color: var(--color-verde-suave-fondo, #f1f5f2);
+    border-radius: 20px;
+    padding: 20px;
+}
+
+.fila-producto {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 15px;
+}
+
+.img-mini { 
+    width: 60px; 
+    height: 60px; 
+    border-radius: 12px; 
+    object-fit: cover; 
+}
+
+.info-producto { flex-grow: 1; }
+
+.txt-negrita { font-weight: bold; font-size: 1rem; margin: 0; }
+.txt-gris { color: #777; font-size: 0.85rem; margin: 4px 0 0 0; }
+
+.total-monto { 
+    font-size: 1.5rem; 
+    font-weight: 800; 
+    color: var(--navy); 
+}
+
+/* BOTÓN DE PAGO */
+.btn-principal-pago {
+    display: block;
+    background: var(--celeste);
+    color: white;
+    text-align: center;
+    padding: 18px;
+    border-radius: 15px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+
+/*----------------------------*/
+/* --- COMPONENTES DE PAGO --- */
+/*----------------------------*/
+
+.fila-doble {
+    display: flex;
+    gap: 15px;
+}
+
+.fila-doble .grupo-entrada {
+    flex: 1;
+}
+
+/* --- ESTILOS DE ÉXITO --- */
+
+.contenedor-centrado-total {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+    text-align: center;
+    padding: 20px;
+}
+
+.icono-check-grande {
+    width: 100px;
+    height: 100px;
+    background-color: var(--celeste);
+    color: var(--blanco);
+    font-size: 50px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 25px;
+    box-shadow: 0 10px 20px rgba(29, 169, 224, 0.2);
+}
+
+.titulo-exito {
+    color: var(--navy);
+    font-size: 1.8rem;
+    font-weight: 800;
+    margin-bottom: 10px;
+}
+
+.subtitulo-exito {
+    color: #666;
+    line-height: 1.5;
+    max-width: 300px;
+}
+
+.btn-secundario-volver {
+    display: block;
+    background: var(--blanco);
+    color: var(--navy);
+    border: 2px solid var(--navy);
+    text-align: center;
+    padding: 16px;
+    border-radius: 14px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.btn-secundario-volver:hover {
+    background: var(--navy);
+    color: var(--blanco);
+}
+
+/* Reafirmando el botón principal con tus colores */
+.btn-principal-pago {
+    background-color: var(--celeste);
+    color: var(--blanco);
+}
+
+/* --- COMPONENTES DE TARJETA Y ÉXITO --- */
+
+/* Para el formulario de tarjeta (fila de Expiración y CVV) */
+.fila-doble {
+    display: flex;
+    gap: 15px;
+}
+
+.fila-doble .grupo-entrada {
+    flex: 1;
+}
+
+/* Componentes de la pantalla de Éxito */
+.icono-check-grande {
+    width: 90px;
+    height: 90px;
+    background-color: var(--celeste); /* Tu color celeste */
+    color: var(--blanco);
+    font-size: 45px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.titulo-exito {
+    color: var(--navy); /* Tu color navy */
+    font-size: 1.6rem;
+    font-weight: 800;
+    margin-bottom: 8px;
+}
+
+.btn-secundario-volver {
+    display: block;
+    background: var(--blanco);
+    color: var(--navy);
+    border: 2px solid var(--navy);
+    text-align: center;
+    padding: 16px;
+    border-radius: 14px;
+    text-decoration: none;
+    font-weight: bold;
+}
