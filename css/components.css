@@ -972,3 +972,74 @@
     padding: 8px 12px;
     border-radius: 10px;
 }
+
+
+/*COMPONENTES DE COMPARACION*/
+/*--------------------------*/
+
+.boton_compra {
+    text-decoration: none;
+    background-color: var(--navy);
+    color: var(--blanco) !important;
+    display: block; text-align: center;
+    padding: 15px; border-radius: 10px;
+    font-weight: 700; margin-top: 15px;
+    text-decoration: none;
+    border: none;
+    width: 100%;
+    margin-bottom: auto;
+}
+
+
+.contenedor-botones-tallacomp {
+    display: flex;
+    gap: 12px; /* Espacio entre cada botón */
+    margin-bottom: 25px;
+}
+
+/* Estilo del botón circular */
+.btn-talla {
+    width: 42px;
+    height: 42px;
+    border-radius: 50%; /* Hace que el botón sea un círculo perfecto */
+    border: 1px solid #e0e0e0;
+    background-color: white;
+    color: var(--navy);
+    font-weight: 600;
+    font-size: 0.9rem;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.3s ease;
+}
+
+/* Estado Activo: Cuando la talla está seleccionada */
+.btn-talla.activo {
+    background-color: var(--navy); /* Fondo oscuro como en el mockup */
+    color: white; /* Texto blanco para que resalte */
+    border-color: var(--navy);
+}
+
+/* Efecto hover (opcional para cuando pasas el mouse) */
+.btn-talla:hover {
+    border-color: var(--celeste);
+    background-color: #f9f9f9;
+}
+
+.etiqueta-pequenacomp {
+    font-size: 0.8rem;
+    color: var(--navy); /* Usando el azul oscuro de tu paleta */
+    margin-bottom: 10px;
+    margin-top: 10px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.info-productocomp {
+    margin-bottom: 20px;
+}
+
+
+
+

@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EliShop - Catálogo</title>
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/components.css">
+    <link rel="stylesheet" href="css/layout.css">
+</head>
+<body class="cuerpo-gris">
+
+    <header class="barra_superior_catalogo" style="background:var(--blanco); border-bottom:1px solid var(--borde);">
+        <div class="header_top">
+            <a href="catalogo.html" class="icono_accion" style="text-decoration:none; color:var(--navy);">←</a>
+            <h1 class="titulo_centro" style="color:var(--navy); font-size: 1.2rem;">CUADRO DE COMPARACIÓN</h1>
+            <div style="width:24px;"></div> 
+        </div>
+    </header>
+
+    <main class="contenedor_comparación">
+        <section id="camisetas" class="seccion-catalogo">
+            <h2 class="titulo-categoria">productos similares</h2>
+            <div class="grid-comparacion">
+
+                <article class="tarjeta_compacta">
+                    <div class="imagen_contenedor">
+                        <span class="etiqueta stock">disponible</span>
+                        <img src="img/sudaderaclasic.jpg" alt="sudadera1">
+                        <button class="boton_carrito_circular">🛒</button>
+
+                    </div>
+                    <div class="info_productocomp">
+                        <h3>Sudadera clasic</h3>
+                        <p class="material">sudadera clasica, hehca de material poliester, a la moda ideal para invierno </p> <span class="envio"> envio gratis a toda guatemala 🚚</span>
+                            <div class="selector-tallascomp">
+                                <p class="etiqueta-pequenacomp">Talla</p>
+                                <div class="contenedor-botones-tallacomp">
+                                    <button type="button" class="btn-talla">S</button>
+                                    <button type="button" class="btn-talla activo">M</button>
+                                    <button type="button" class="btn-talla">L</button>
+                                </div>
+                            
+                        </div>
+                        <p class="precio_app"> precio Q250.00</p>
+                        <a href="carrito.html">
+                            <button class="boton_compra"> agregar al carrito</button>
+                        </a>
+                    </div>
+                </article>
+                
+
+
+                <article class="tarjeta_compacta">
+                    <div class="imagen_contenedor">
+                        <span class="etiqueta oferta">pocos en stock</span>
+                        <img src="img/sudaderapro" alt="check-sudadera2">
+                        <button class="boton_carrito_circular">🛒</button>
+        
+                    </div>
+                    <div class="info_productocomp">
+                        <h3>sudadera pro</h3>
+                        <p class="material">sudadera de moda color --navy, doble tela, material algodon, a la moda e ideal para invierno </p> <span class="envio"> envio gratis a toda guatemala 🚚</span>
+
+                        <div class="selector-tallascomp">
+                            <p class="etiqueta-pequenacomp">Talla</p>
+                            <div class="contenedor-botones-tallacomp">
+                                <button type="button" class="btn-talla">S</button>
+                                <button type="button" class="btn-talla activo">M</button>
+                                <button type="button" class="btn-talla">L</button>
+                            </div>
+                        </div>
+                        <p class="precio_app">precio: Q300.00</p>
+                        <a href="carrito.html">
+                            <button class="boton_compra"> agregar al carrito</button>
+                        </a>
+                    </div>
+                </article>
+
+                </div>
+        </section>
+
+        </main>
+
+        <nav class="barra-inferior">
+        <a href="index.html" class="icono-nav activo">
+            <i>🏠</i>
+            <span>Inicio</span>
+        </a> 
+        <a href="favoritos.html" class="icono-nav">
+            <i>❤️</i>
+            <span>Favoritos</span>
+        </a>
+        <a href="historial.html" class="icono-nav">
+            <i>📦</i>
+            <span>Pedidos</span>
+        </a> 
+        <a href="carrito.html" class="icono-nav">
+            <i>🛒</i>
+            <span>Carrito</span>
+        </a> 
+        <a href="perfil.html" class="icono-nav">
+            <i>👤</i>
+            <span>Perfil</span>
+        </a>
+    </nav>
+</body>
+</html> 

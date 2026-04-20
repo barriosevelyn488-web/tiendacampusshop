@@ -245,3 +245,20 @@
     color: var(--celeste);
     font-weight: bold;
 }
+
+/*-------POSICIONES Y GRID DE COMPARACIÓN*/
+/*---------------------------------------*/
+
+.grid-comparacion {
+    display: grid !important;
+    grid-template-columns: 1fr 1fr !important; /* Dos productos por fila */
+    gap: 15px;
+    width: 100%;
+}
+
+.contenedor_comparación {
+    padding: 15px;
+    margin-bottom: 80px;
+}
+
+
